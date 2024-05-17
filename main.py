@@ -9,61 +9,74 @@ from VoiceAssistant.voice import speak, play_sound
 import webrtcvad
 import noisereduce as nr
 
-path_to_python = "C:/Dian/SmartHouse#2/venv/Scripts/python.exe"
-path_to_init_server = "C:/Dian/SmartHouse#2/PhoWhisper_Server/init_server.py"
-path_to_activate_ww = "C:/Dian/SmartHouse#2/WakeWord/ww_interact.py"
+current_dir = os.path.dirname(os.path.realpath(__file__))
+path_to_python = os.path.join(current_dir,  "venv\Scripts\python.exe")
+path_to_init_server = os.path.join(current_dir, "PhoWhisper_Server\init_server.py")
+path_to_activate_ww = os.path.join(current_dir, "WakeWord\ww_interact.py")
 rising_sound = "Rising.mp3"
 
 def start_server():
     """Start the Flask server using a subprocess."""
     # Make sure to specify the correct path to your init_server.py script
-    subprocess.Popen([path_to_python, path_to_init_server])
+    process = subprocess.Popen([path_to_python, path_to_init_server])
+    process.wait() 
+    
 
 def detect_wake_word():
     process = subprocess.Popen([path_to_python, path_to_activate_ww])
     process.wait()  
-    return process.returncode == 1
+    return process.returncode == 0
 
-def record_audio(filename="audio.wav", duration=10, fs=16000):
-    """Record audio from the microphone, stop when silence is detected, and perform noise reduction."""
-    print("Start recording...")
 
-    vad = webrtcvad.Vad()
-    vad.set_mode(1)  # Level of aggressiveness from 0 to 3
-
-    def callback(indata, frames, time, status):
-        """This is called (from a separate thread) for each audio block."""
-        if status:
-            print(status)
-
-    # Create a stream object
-    stream = sd.InputStream(callback=callback, samplerate=fs, channels=1, dtype='int16')
+def record_audio(filename='audio.wav', duration=5, fs=16000, silence_threshold=0.5):
+    
+    print("Start Recording..")
     start_time = time.time()
-    with stream:
-        # Initialize variables
-        voiced_frames = []
-        detected_voice = False
+    vad = webrtcvad.Vad(1)  # Set mode to 1 for moderate aggressiveness
+    frame_duration = 0.02  # Frame duration in seconds: 20 ms
+    frame_size = int(fs * frame_duration)
+    audio_data = []
+    
+    def callback(indata, frames, time, status):
+        nonlocal num_silent_frames
+        if status:
+            print("Error:", status)
+        if len(indata) < frame_size:
+            return  # Skip the incomplete frame
+        is_speech = vad.is_speech(indata[:, 0].tobytes(), sample_rate=fs)
+        print('Is speech:', is_speech)
+        if is_speech:
+            num_silent_frames = 0
+        else:
+            num_silent_frames += 1
+        audio_data.append(indata.copy())
 
-        for _ in range(int(duration * fs / 512)):  # Only loop duration seconds
-            data = stream.read(512)[0]  # Read 512 samples
-            # Check if the current frame contains speech
-            if vad.is_speech(data.tobytes(), sample_rate=fs):
-                voiced_frames.append(data)
-                detected_voice = True
-            elif detected_voice:
-                break  # Stop recording after speech stops
+    num_silent_frames = 0
+    silent_frames_threshold = int(silence_threshold / frame_duration)
 
-    # Convert the list of numpy-arrays into a 1D array (flatten)
-    audio_data = np.concatenate(voiced_frames, axis=0)
+    with sd.InputStream(callback=callback, samplerate=fs, channels=1, dtype='int16', blocksize=frame_size):
+        while num_silent_frames < silent_frames_threshold:
+            sd.sleep(int(frame_duration * 1000))  # Sleep for frame duration to reduce CPU usage
+
+    print('Recording finished')
+
+    # Concatenate all recorded audio frames
+    audio_np = np.concatenate([x.flatten() for x in audio_data], axis=0)
+    print('Concatenation finished, Data Type:', audio_np.dtype, 'Shape:', audio_np.shape)
 
     # Noise reduction
-    reduced_noise_audio = nr.reduce_noise(y=audio_data, sr=fs)
+    try:
+        reduced_noise_audio = nr.reduce_noise(y=audio_np, sr=fs)
+        print('Noise reduction finished.')
+    except Exception as e:
+        print(f'Error during noise reduction: {e}')
+        return
 
-    # Convert to int16 and save as WAV
+    print("Record in {:.2f} seconds.".format(time.time() - start_time))
+    # Save the processed audio
     write(filename, fs, reduced_noise_audio.astype(np.int16))
-    print("Finish recording. Saved as", filename, "in {:.2f} seconds.".format(time.time() - start_time))
-
     return filename
+
 
 def send_audio_to_server(audio_path):
     """Send the audio file to the Flask server for transcription."""
@@ -74,16 +87,17 @@ def send_audio_to_server(audio_path):
     return transcription_result
 
 if __name__ == "__main__":
-    #start_server() 
-    if detect_wake_word(): # Wait for the wake word to be detected
-        speak("Tôi đây")
-        play_sound(rising_sound)
-        audio_path = record_audio(duration=3)  # Record the audio command
-        try:
-            start_time = time.time()
-            result = send_audio_to_server(audio_path)  # Send the audio to the server and get the transcription
-            print("Received result in {:.2f} seconds.".format(time.time() - start_time))
-            print("Transcription Result:", result)
-            os.remove(audio_path)
-        except Exception as e:
-            print(f"Failed to send audio to the server: {e}")
+    start_server() 
+    time.sleep(5)
+    # if detect_wake_word(): # Wait for the wake word to be detected
+    #     speak("Tôi đây")
+    #     play_sound(rising_sound)
+    audio_path = record_audio()  # Record the audio command
+    try:
+        start_time = time.time()
+        result = send_audio_to_server(audio_path)  # Send the audio to the server and get the transcription
+        print("Received result in {:.2f} seconds.".format(time.time() - start_time))
+        print("Transcription Result:", result)
+        os.remove(audio_path)
+    except Exception as e:
+        print(f"Failed to send audio to the server: {e}")

@@ -1,8 +1,8 @@
 import os
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
 import struct
 import sys
 import pyaudio
-print(pyaudio.__path__)
 import pvporcupine
 
 def create_audio_stream(pa):
@@ -41,11 +41,12 @@ def get_next_audio_frame(audio_stream, frame_length):
 def activate_ww(porcupine, audio_stream):
     """Activate wake word detection."""
     try:
+        print("[Bé Ba] Sleeping...zZ")
         while True:
             pcm = get_next_audio_frame(audio_stream, porcupine.frame_length)
             keyword_index = porcupine.process(pcm)
             if keyword_index >= 0:
-                sys.exit(1)
+                sys.exit(0)
     except KeyboardInterrupt:
         print("Stopping")
     finally:
