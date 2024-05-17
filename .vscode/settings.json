@@ -1,0 +1,17 @@
+{
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell",
+            "path": [
+                "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+            ],
+            "args": [
+                "-NoExit",
+                "-Command",
+                "&{ . 'C:\\Dian\\SmartHouse\\venv\\Scripts\\Activate.ps1' }"
+            ]
+        }
+    }
+}
