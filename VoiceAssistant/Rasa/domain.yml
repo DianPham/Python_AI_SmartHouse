@@ -1,0 +1,95 @@
+version: "3.1"
+
+intents:
+  - need_toilet
+  - light_activate
+  - light_deactivate
+  - open_window
+  - close_window
+  - turn_on_TV
+  - turn_off_TV
+  - make_coffee
+  - adjiust_temperature
+  - turn_on_music
+  - end
+
+responses:
+  utter_need_toilet:
+  - text: "Sao anh dơ quá vậy ạ"
+  - text: "Kệ anh"
+  - text: "May quá em ỉa rồi"
+  - text: "Để em dắt anh đi ỉa"
+
+  utter_light_activate:
+  - text: "Đã bật đèn cho bạn."
+  - text: "Đèn đã được mở."
+  - text: "Tôi đã bật đèn như bạn yêu cầu."
+  - text: "Đèn phòng khách đã sáng."
+  - text: "Xong, đèn đã được bật."
+
+  utter_light_deactivate:
+  - text: "Đèn đã tắt."
+  - text: "Tôi đã tắt đèn."
+  - text: "Đèn đã được tắt theo yêu cầu của bạn."
+  - text: "Đã tắt đèn, cần gì thêm không?"
+  - text: "Xong, đèn đã tắt."
+
+  utter_open_window:
+  - text: "Cửa sổ đã mở."
+  - text: "Tôi đã mở cửa sổ cho bạn."
+  - text: "Cửa sổ phòng khách đã được mở."
+  - text: "Đã mở cửa sổ, không khí trong lành hơn rồi đấy."
+  - text: "Cửa sổ đã mở, bạn muốn làm gì tiếp theo?"
+
+  utter_close_window:
+  - text: "Cửa sổ đã đóng."
+  - text: "Tôi đã đóng cửa sổ lại rồi."
+  - text: "Cửa sổ phòng ngủ đã đóng."
+  - text: "Xong, cửa sổ đã được đóng kín."
+  - text: "Đã đóng cửa sổ, bạn cần gì thêm không?"
+
+  utter_turn_on_TV:
+  - text: "Tivi đã bật."
+  - text: "Bật tivi cho bạn rồi đấy."
+  - text: "Tivi phòng khách đã được mở."
+  - text: "Xong, tivi đã bật. Có chương trình bạn thích đang chiếu đấy."
+  - text: "Tivi đã được bật, hãy thưởng thức buổi tối của bạn."
+
+  utter_turn_off_TV:
+  - text: "Tivi đã tắt."
+  - text: "Tôi đã tắt tivi giúp bạn."
+  - text: "Tivi đã được tắt."
+  - text: "Xong, tivi đã tắt."
+  - text: "Tất cả đã xong, tivi đã tắt."
+  
+  utter_make_coffee:
+  - text: "Đang pha cà phê cho bạn."
+  - text: "Cà phê sẽ sẵn sàng trong ít phút."
+  - text: "Tôi đang pha cà phê, chờ chút nhé."
+  - text: "Cà phê của bạn sắp sẵn sàng."
+  - text: "Pha cà phê ngay đây, bạn sẽ thích mùi của nó."
+
+  utter_adjiust_temperature:
+  - text: "Nhiệt độ đã điều chỉnh theo yêu cầu của bạn."
+  - text: "Tôi đã tăng nhiệt độ lên rồi."
+  - text: "Nhiệt độ phòng đã giảm, mát mẻ hơn rồi đấy."
+  - text: "Đã điều chỉnh nhiệt độ phòng như bạn muốn."
+  - text: "Nhiệt độ đã được thiết lập, cảm thấy thế nào?"
+
+  utter_turn_on_music:
+  - text: "Nhạc đã được bật."
+  - text: "Đang phát bài hát bạn yêu thích."
+  - text: "Nhạc đã mở, hãy thả lỏng và thưởng thức."
+  - text: "Tận hưởng bản nhạc này nhé."
+  - text: "Bật nhạc thành công, bạn muốn nghe gì tiếp theo?"
+
+  utter_end:
+  - text: "Vâng ạ, nếu có cần gì thì cứ gọi em nhé"
+  - text: "Vâng chúc một ngày tốt lành ạ"
+  - text: "Dạ chào tạm biệt"
+  - text: "Em đi đây ạ"
+  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

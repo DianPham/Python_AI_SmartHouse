@@ -1,0 +1,227 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: need_toilet
+  examples: |
+    - mắc ỉa quá
+    - đau bụng
+    - đi ỉa
+    - cần chỗ ỉa
+    - mắc ỉa ghê
+    - mắc ỉa
+
+- intent: light_activate
+  examples: |
+    - bật đèn
+    - mở đèn phòng khách
+    - làm ơn bật đèn
+    - hãy bật đèn cho tôi
+    - bật đèn lên
+    - mở đèn ngủ đi
+    - vui lòng bật đèn
+    - bạn có thể bật đèn không
+    - bật đèn phòng tắm
+    - bật đèn bếp
+
+- intent: light_deactivate
+  examples: |
+    - tắt đèn
+    - tắt đèn phòng ngủ
+    - làm ơn tắt đèn
+    - hãy tắt đèn đi
+    - tắt hết đèn
+    - tắt đèn bếp đi
+    - bạn có thể tắt đèn không
+    - tắt đèn phòng tắm
+    - tắt đèn ngoài hành lang
+    - tắt đèn phòng khách
+
+- intent: open_window
+  examples: |
+    - mở cửa sổ
+    - hãy mở cửa sổ phòng khách
+    - làm ơn mở cửa sổ
+    - kéo cửa sổ lên
+    - mở cửa sổ cho tôi
+    - vui lòng mở cửa sổ
+    - mở cửa sổ phòng ngủ
+    - mở cửa sổ bếp
+    - bạn có thể mở cửa sổ không
+    - mở cửa sổ phòng tắm
+
+- intent: close_window
+  examples: |
+    - đóng cửa sổ
+    - đóng cửa sổ phòng ngủ
+    - làm ơn đóng cửa sổ lại
+    - hãy kéo cửa sổ xuống
+    - đóng lại cửa sổ cho tôi
+    - đóng cửa sổ phòng khách
+    - vui lòng đóng cửa sổ
+    - đóng cửa sổ bếp
+    - bạn có thể đóng cửa sổ không
+    - đóng cửa sổ phòng tắm
+
+- intent: turn_on_TV
+  examples: |
+    - bật tivi
+    - mở tivi
+    - làm ơn bật tivi
+    - hãy mở tivi cho tôi
+    - bật tivi lên
+    - mở tivi phòng khách
+    - vui lòng bật tivi
+    - bật tivi ngoài phòng
+    - bạn có thể bật tivi không
+    - bật tivi phòng ngủ
+
+- intent: turn_off_TV
+  examples: |
+    - tắt tivi
+    - tắt tivi đi
+    - làm ơn tắt tivi
+    - hãy tắt tivi đi
+    - tắt cái tivi
+    - tắt tivi phòng khách
+    - vui lòng tắt tivi
+    - tắt tivi phòng ngủ
+    - bạn có thể tắt tivi không
+    - tắt tivi trong phòng
+
+- intent: make_coffee
+  examples: |
+    - làm cà phê
+    - pha cà phê cho tôi
+    - bắt đầu pha cà phê
+    - làm ơn pha cà phê
+    - hãy pha cho tôi cốc cà phê
+    - pha cà phê đi
+    - bạn có thể pha cà phê không
+    - vui lòng pha cà phê
+    - tôi muốn uống cà phê
+    - máy pha cà phê bắt đầu
+
+- intent: adjiust_temperature
+  examples: |
+    - tăng nhiệt độ lên
+    - giảm nhiệt độ xuống
+    - làm mát phòng
+    - hãy tăng nhiệt độ
+    - điều chỉnh nhiệt độ phòng
+    - làm ấm phòng lên
+    - giảm nhiệt độ phòng
+    - bạn có thể điều chỉnh nhiệt độ không
+    - vui lòng tăng nhiệt độ lên
+    - tôi cần mát hơn
+
+- intent: turn_on_music
+  examples: |
+    - mở nhạc
+    - bật bài hát
+    - phát nhạc
+    - mở nhạc nhẹ
+    - hãy phát nhạc lên
+    - bật nhạc đi
+    - mở bài hát yêu thích
+    - bạn có thể mở nhạc không
+    - vui lòng phát bài hát
+    - tôi muốn nghe nhạc
+
+- intent: end
+  examples: |
+    - vậy thôi
+    - ok
+    - ô kê
+    - được
+    - ừm
+    - rồi rồi
+

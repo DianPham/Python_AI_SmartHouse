@@ -8,6 +8,7 @@ pygame.mixer.init()
 
 async def play_sound(filename):
     pygame.mixer.music.load(filename)
+    print(filename)
     pygame.mixer.music.play()
     while pygame.mixer.music.get_busy():
         await asyncio.sleep(0.1)  # Non-blocking wait
