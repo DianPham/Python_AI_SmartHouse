@@ -89,6 +89,8 @@ responses:
   - text: "Dạ chào tạm biệt"
   - text: "Em đi đây ạ"
   
+  utter_unclear:
+  - text: "Em chưa hiểu ý mình lắm ạ, mình nói lại giúp em được không"
 
 session_config:
   session_expiration_time: 60

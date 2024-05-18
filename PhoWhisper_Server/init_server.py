@@ -16,7 +16,7 @@ def load_model():
         start_time = time.time()
         try:
             # Attempt to load the model
-            model = pipeline("automatic-speech-recognition", model="vinai/PhoWhisper-medium", framework="pt")
+            model = pipeline("automatic-speech-recognition", model="vinai/PhoWhisper-base", framework="pt")
             load_time = time.time() - start_time
             print(f"Model loaded in {load_time:.2f} seconds.")
         except Exception as e:
