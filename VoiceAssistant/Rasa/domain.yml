@@ -14,12 +14,6 @@ intents:
   - end
 
 responses:
-  utter_need_toilet:
-  - text: "Sao anh dơ quá vậy ạ"
-  - text: "Kệ anh"
-  - text: "May quá em ỉa rồi"
-  - text: "Để em dắt anh đi ỉa"
-
   utter_light_activate:
   - text: "Đã bật đèn cho bạn."
   - text: "Đèn đã được mở."
@@ -91,6 +85,11 @@ responses:
   
   utter_unclear:
   - text: "Em chưa hiểu ý mình lắm ạ, mình nói lại giúp em được không"
+
+  utter_default:
+  - text: "Em chưa hiểu ý mình lắm ạ, mình nói lại giúp em được không"
+  - text: "Xin lỗi nhưng mình nói lại giúp em được không ạ, em chưa nghe rõ"
+
 
 session_config:
   session_expiration_time: 60

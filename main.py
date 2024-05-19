@@ -38,108 +38,6 @@ def detect_wake_word():
     process.wait()  
     return process.returncode == 0
 
-# def record_audio(filename='audio.wav', duration=10, fs=16000, silence_threshold=1, max_silence_duration=5):
-#     print("Start Recording..")
-#     start_time = time.time()
-#     vad = webrtcvad.Vad(2)  # Set mode to 2 for moderate aggressiveness
-#     frame_duration = 0.02  # Frame duration in seconds: 20 ms
-#     frame_size = int(fs * frame_duration)
-#     audio_data = []
-    
-#     total_silence_duration = 0
-#     num_silent_frames = 0
-#     silent_frames_threshold = int(silence_threshold / frame_duration)
-
-#     with sd.InputStream(callback=lambda indata, frames, time, status: audio_data.append(indata.copy()) if vad.is_speech(indata[:, 0].tobytes(), fs) else None, samplerate=fs, channels=1, dtype='int16', blocksize=frame_size):
-#         while total_silence_duration < max_silence_duration:
-#             sd.sleep(int(frame_duration * 1000))  # Sleep for frame duration to reduce CPU usage
-#             if not vad.is_speech(audio_data[-1][:, 0].tobytes(), fs):
-#                 num_silent_frames += 1
-#                 if num_silent_frames >= silent_frames_threshold:
-#                     total_silence_duration += num_silent_frames * frame_duration
-#                     num_silent_frames = 0
-#             else:
-#                 num_silent_frames = 0
-
-#     if total_silence_duration >= max_silence_duration:
-#         print('Max silence duration reached.')
-#         return None
-
-#     print('Recording finished')
-#     print("Record in {:.2f} seconds.".format(time.time() - start_time))
-#     audio_np = np.concatenate([x.flatten() for x in audio_data], axis=0)
-
-#     try:
-#         reduced_noise_audio = nr.reduce_noise(y=audio_np, sr=fs)
-#         print('Noise reduction finished.')
-#         write(filename, fs, reduced_noise_audio.astype(np.int16))
-#         return filename
-#     except Exception as e:
-#         print(f'Error during noise reduction: {e}')
-#         return None
-    
-
-# def record_audio(filename='audio.wav', duration=5, fs=16000, silence_threshold=0.2, max_silence_duration=3):
-#     print("Start Recording...")
-#     vad = webrtcvad.Vad(3)  # Set mode to 2 for moderate aggressiveness
-#     frame_duration = 0.02  # Frame duration in seconds: 20 ms
-#     frame_size = int(fs * frame_duration)
-#     audio_data = []
-#     total_silence_duration = 0
-#     num_silent_frames = 0
-#     silent_frames_threshold = int(silence_threshold / frame_duration)
-
-#     def callback(indata, frames, time, status):
-#         nonlocal total_silence_duration, num_silent_frames
-#         if status:
-#             print("Error:", status)
-#         is_speech = vad.is_speech(indata.tobytes(), fs)
-#         print("Is speech:", is_speech)
-
-#         if not is_speech:
-#             num_silent_frames += 1
-#             if num_silent_frames >= 10:
-#                 total_silence_duration += num_silent_frames * frame_duration
-#                 print("Added silence: " + str(num_silent_frames * frame_duration))
-#                 num_silent_frames = 0
-
-#         if total_silence_duration > max_silence_duration:
-#             print("Total: " + str(total_silence_duration))
-#             print("Max: " + str(max_silence_duration))
-#             raise sd.CallbackStop
-
-#         if is_speech:
-#             audio_data.append(indata.copy())
-
-#     try:
-#         with sd.InputStream(callback=callback, samplerate=fs, channels=1, dtype='int16', blocksize=frame_size) as stream:
-#             while True:
-#                 time.sleep(0.1)  # This sleep is crucial to not freezing the GUI if any
-#     except sd.CallbackStop:
-#         print("Silence detected, stopping stream.")
-#         if 'stream' in locals():
-#             stream.stop()
-#             stream.close()
-#     except Exception as e:
-#         print(f"An error occurred: {e}")
-
-#     if not audio_data:
-#         print("No audio data recorded.")
-#         return None
-
-#     print('Recording finished.')
-#     audio_np = np.concatenate(audio_data, axis=0)
-
-#     try:
-#         reduced_noise_audio = nr.reduce_noise(y=audio_np, sr=fs)
-#         print('Noise reduction finished.')
-#         write(filename, fs, reduced_noise_audio.astype(np.int16))
-#         return filename
-#     except Exception as e:
-#         print(f'Error during noise reduction: {e}')
-#         return None
-
-
 def record_audio(filename='audio.wav', fs=16000, max_silence_duration=0.7):
     print("Start Recording...")
     start_time = time.time()
@@ -201,7 +99,7 @@ def send_audio_to_server(audio_path):
     return transcription_result
 
 def load_rasa_model():
-    speak("Tôi đang khởi động lại bạn chờ chút nhé")
+    speak("Tôi đang khởi động lại, bạn chờ chút nhé")
     try:
         global agent
         agent = Agent.load(path_to_rasa_model)
@@ -250,6 +148,8 @@ def in_conversation():
         if intent == "end":
             speak(response)
         speak(response)
+        if intent == "nlu_fallback":
+            in_conversation()
         print("Received result in {:.2f} seconds.".format(time.time() - start_time))
         #os.remove(audio_path)
     except Exception as e:
