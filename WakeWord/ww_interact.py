@@ -60,5 +60,4 @@ if __name__ == "__main__":
     porcupine = init_porcupine(current_dir)
     audio_stream = create_audio_stream(pa)
     
-    if activate_ww(porcupine, audio_stream):
-        print("Wake word activated.")
+    activate_ww(porcupine, audio_stream)

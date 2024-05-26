@@ -23,7 +23,7 @@ path_to_python = os.path.join(current_dir,  "venv\Scripts\python.exe")
 path_to_init_server = os.path.join(current_dir, "PhoWhisper_Server\init_server.py")
 path_to_activate_ww = os.path.join(current_dir, "WakeWord\ww_interact.py")
 rising_sound = "Rising.mp3"
-path_to_rasa_model = os.path.join(current_dir, "VoiceAssistant\Rasa\models\demo_model.tar.gz")
+path_to_rasa_model = os.path.join(current_dir, "VoiceAssistant\Rasa\models/demo_model2.tar.gz")
 agent = None
 
 
@@ -147,11 +147,12 @@ def in_conversation():
         print(intent)
         if intent == "end":
             speak(response)
+            return
         speak(response)
         if intent == "nlu_fallback":
             in_conversation()
         print("Received result in {:.2f} seconds.".format(time.time() - start_time))
-        #os.remove(audio_path)
+        os.remove(audio_path)
     except Exception as e:
         print(f"Failed to send audio to the server: {e}")
 

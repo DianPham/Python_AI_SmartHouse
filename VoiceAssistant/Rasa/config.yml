@@ -11,8 +11,20 @@ assistant_id: 20240519-034145-silver-suitcase
 # Configuration for Rasa NLU.
 # https://rasa.com/docs/rasa/nlu/components/
 language: vi
-
-pipeline: null
+# pipeline: null
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: DIETClassifier
+    epochs: 200  # Possibly increase training epochs
+  - name: EntitySynonymMapper
+  - name: ResponseSelector
+    epochs: 100
+  - name: FallbackClassifier
+    threshold: 0.85
+    ambiguity_threshold: 0.15
 # # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
 # # If you'd like to customize it, uncomment and adjust the pipeline.
 # # See https://rasa.com/docs/rasa/tuning-your-model for more information.
@@ -38,20 +50,6 @@ pipeline: null
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
 policies: null
-# # No configuration for policies was provided. The following default policies were used to train your model.
-# # If you'd like to customize them, uncomment and adjust the policies.
-# # See https://rasa.com/docs/rasa/policies for more information.
-#   - name: MemoizationPolicy
-#   - name: RulePolicy
-#   - name: UnexpecTEDIntentPolicy
-#     max_history: 5
-#     epochs: 100
-#   - name: TEDPolicy
-#     max_history: 5
-#     epochs: 100
-#     constrain_similarities: true
-
-#policies:
 # # No configuration for policies was provided. The following default policies were used to train your model.
 # # If you'd like to customize them, uncomment and adjust the policies.
 # # See https://rasa.com/docs/rasa/policies for more information.
