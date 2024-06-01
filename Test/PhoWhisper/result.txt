@@ -1,0 +1,840 @@
+nam_long_1.wav: 
+Transcription: làm ơn mở đèn phòng khách cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 4.69 seconds
+
+
+nam_long_10.wav: 
+Transcription: làm ơn mở đèn phòng khách cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 4.20 seconds
+
+
+nam_long_2.wav: 
+Transcription: làm ơn mở đèn phòng khách cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 4.00 seconds
+
+
+nam_long_3.wav: 
+Transcription: làm ơn mở đèn phòng khách cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.91 seconds
+
+
+nam_long_4.wav: 
+Transcription: làm ơn mở đèn phòng khách cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.94 seconds
+
+
+nam_long_5.wav: 
+Transcription: làm ơn mở đèn phòng khách cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 4.03 seconds
+
+
+nam_long_6.wav: 
+Transcription: làm ơn mở đèn phòng khách cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.93 seconds
+
+
+nam_long_7.wav: 
+Transcription: làm ơn mở đèn phòng khác cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.125
+Transcription Time: 3.89 seconds
+
+
+nam_long_8.wav: 
+Transcription: làm ơn mở đèn phòng khách cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.87 seconds
+
+
+nam_long_9.wav: 
+Transcription: làm ơn mở điện phòng khách cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.125
+Transcription Time: 3.87 seconds
+
+
+nam_medium_10_1.wav: 
+Transcription: làm ơn mở đèn.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 3.69 seconds
+
+
+nam_medium_10_2.wav: 
+Transcription: hãy mở cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.93 seconds
+
+
+nam_medium_1_1.wav: 
+Transcription: làm ơn mở đèn.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 3.98 seconds
+
+
+nam_medium_1_2.wav: 
+Transcription: hãy mở cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.90 seconds
+
+
+nam_medium_2_1.wav: 
+Transcription: làm ơn mở đèn.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 3.73 seconds
+
+
+nam_medium_2_2.wav: 
+Transcription: hãy mở cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.79 seconds
+
+
+nam_medium_3_1.wav: 
+Transcription: làm ơn mở đèn.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 3.69 seconds
+
+
+nam_medium_3_2.wav: 
+Transcription: hãy mở cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.85 seconds
+
+
+nam_medium_4_1.wav: 
+Transcription: làm mơn mở điện.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.5
+Transcription Time: 3.69 seconds
+
+
+nam_medium_4_2.wav: 
+Transcription: hãy mở cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.85 seconds
+
+
+nam_medium_5_1.wav: 
+Transcription: làm ơn mở đèn.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 4.14 seconds
+
+
+nam_medium_5_2.wav: 
+Transcription: hãy mở cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.92 seconds
+
+
+nam_medium_6_1.wav: 
+Transcription: làm ơn mở đèn.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 3.77 seconds
+
+
+nam_medium_6_2.wav: 
+Transcription: hãy mở cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.80 seconds
+
+
+nam_medium_7_1.wav: 
+Transcription: làm ơn mở đèn.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 3.64 seconds
+
+
+nam_medium_7_2.wav: 
+Transcription: hãy ỷ mở cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.16666666666666666
+Transcription Time: 3.93 seconds
+
+
+nam_medium_8_1.wav: 
+Transcription: làm ơn mở đèn.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 3.68 seconds
+
+
+nam_medium_8_2.wav: 
+Transcription: hãy mở cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 4.18 seconds
+
+
+nam_medium_9_1.wav: 
+Transcription: ngàm ơn mở đi.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.5
+Transcription Time: 3.69 seconds
+
+
+nam_medium_9_2.wav: 
+Transcription: hãy mở cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.84 seconds
+
+
+nam_mocuaso_1.wav: 
+Transcription: mở cửa sổ.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.0
+Transcription Time: 3.83 seconds
+
+
+nam_mocuaso_10.wav: 
+Transcription: mở cửa sổ.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.0
+Transcription Time: 4.43 seconds
+
+
+nam_mocuaso_2.wav: 
+Transcription: mở cửa sổ.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.0
+Transcription Time: 3.83 seconds
+
+
+nam_mocuaso_3.wav: 
+Transcription: mở cửa sổ.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.0
+Transcription Time: 3.71 seconds
+
+
+nam_mocuaso_4.wav: 
+Transcription: mở cửa sổ.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.0
+Transcription Time: 3.92 seconds
+
+
+nam_mocuaso_5.wav: 
+Transcription: mở cửa sổ.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.0
+Transcription Time: 3.96 seconds
+
+
+nam_mocuaso_6.wav: 
+Transcription: mở cửa sổ.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.0
+Transcription Time: 3.94 seconds
+
+
+nam_mocuaso_7.wav: 
+Transcription: mở cửa sổ.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.0
+Transcription Time: 3.83 seconds
+
+
+nam_mocuaso_8.wav: 
+Transcription: mở cửa sổ hộ.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.6666666666666666
+Transcription Time: 3.74 seconds
+
+
+nam_mocuaso_9.wav: 
+Transcription: mở cửa sổ.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.0
+Transcription Time: 3.76 seconds
+
+
+nam_moden_1.wav: 
+Transcription: mở đền.
+Ground Truth: Mở đèn.
+Word Error Rate: 0.5
+Transcription Time: 3.72 seconds
+
+
+nam_moden_10.wav: 
+Transcription: mở đèn.
+Ground Truth: Mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 3.74 seconds
+
+
+nam_moden_2.wav: 
+Transcription: mỏ đèn.
+Ground Truth: Mở đèn.
+Word Error Rate: 0.5
+Transcription Time: 3.99 seconds
+
+
+nam_moden_3.wav: 
+Transcription: mợ đen.
+Ground Truth: Mở đèn.
+Word Error Rate: 1.0
+Transcription Time: 3.86 seconds
+
+
+nam_moden_4.wav: 
+Transcription: mở đèn.
+Ground Truth: Mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 3.97 seconds
+
+
+nam_moden_5.wav: 
+Transcription: mở đèn.
+Ground Truth: Mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 4.01 seconds
+
+
+nam_moden_6.wav: 
+Transcription: mỡ đèn.
+Ground Truth: Mở đèn.
+Word Error Rate: 0.5
+Transcription Time: 3.75 seconds
+
+
+nam_moden_7.wav: 
+Transcription: mở đèn.
+Ground Truth: Mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 3.63 seconds
+
+
+nam_moden_8.wav: 
+Transcription: mở đèn.
+Ground Truth: Mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 3.74 seconds
+
+
+nam_moden_9.wav: 
+Transcription: ở đây.
+Ground Truth: Mở đèn.
+Word Error Rate: 1.0
+Transcription Time: 3.74 seconds
+
+
+nam_motivi_1.wav: 
+Transcription: mở ti vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.0
+Transcription Time: 3.86 seconds
+
+
+nam_motivi_10.wav: 
+Transcription: mở ti vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.0
+Transcription Time: 3.75 seconds
+
+
+nam_motivi_2.wav: 
+Transcription: mở ti vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.0
+Transcription Time: 3.77 seconds
+
+
+nam_motivi_3.wav: 
+Transcription: mở ti vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.0
+Transcription Time: 3.74 seconds
+
+
+nam_motivi_4.wav: 
+Transcription: mở ti vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.0
+Transcription Time: 3.65 seconds
+
+
+nam_motivi_5.wav: 
+Transcription: mở ti vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.0
+Transcription Time: 3.91 seconds
+
+
+nam_motivi_6.wav: 
+Transcription: mở ti vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.0
+Transcription Time: 3.80 seconds
+
+
+nam_motivi_7.wav: 
+Transcription: mở ti vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.0
+Transcription Time: 3.73 seconds
+
+
+nam_motivi_8.wav: 
+Transcription: mở ti vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.0
+Transcription Time: 3.76 seconds
+
+
+nam_motivi_9.wav: 
+Transcription: mới pi vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.6666666666666666
+Transcription Time: 3.71 seconds
+
+
+nu_long_1.wav: 
+Transcription: làm ơn mở đèn phòng khách cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 4.27 seconds
+
+
+nu_long_10.wav: 
+Transcription: làm ơn mở đèn phòng khách cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 4.70 seconds
+
+
+nu_long_2.wav: 
+Transcription: làm ơn mở đàn phòng khách cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.125
+Transcription Time: 4.29 seconds
+
+
+nu_long_3.wav: 
+Transcription: làm ơn mở đèn phòng khách cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.98 seconds
+
+
+nu_long_4.wav: 
+Transcription: làm ơn mở đèn phòng khách cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 4.02 seconds
+
+
+nu_long_5.wav: 
+Transcription: lạ mờ mở đèn phòng khách cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.25
+Transcription Time: 4.07 seconds
+
+
+nu_long_6.wav: 
+Transcription: làm ơn mở đèn phòng khách cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.84 seconds
+
+
+nu_long_7.wav: 
+Transcription: làm ơn mở đèn phòng khách cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 4.01 seconds
+
+
+nu_long_8.wav: 
+Transcription: làm ơn mở đèn phòng khách cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.80 seconds
+
+
+nu_long_9.wav: 
+Transcription: hãy mở cơ sở cho tôi.
+Ground Truth: Làm ơn mở đèn phòng khách cho tôi.
+Word Error Rate: 0.625
+Transcription Time: 3.79 seconds
+
+
+nu_medium_10_1.wav: 
+Transcription: làm ơn mở đèn.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 3.89 seconds
+
+
+nu_medium_10_2.wav: 
+Transcription: hãy mở cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.93 seconds
+
+
+nu_medium_1_1.wav: 
+Transcription: làm ơn mở đèn.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 3.81 seconds
+
+
+nu_medium_1_2.wav: 
+Transcription: hãy mở cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.80 seconds
+
+
+nu_medium_2_1.wav: 
+Transcription: làm ơn mở đèn.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 3.78 seconds
+
+
+nu_medium_2_2.wav: 
+Transcription: hãy mở cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.96 seconds
+
+
+nu_medium_3_1.wav: 
+Transcription: lời mơ mở điên.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.75
+Transcription Time: 3.80 seconds
+
+
+nu_medium_3_2.wav: 
+Transcription: hãy mở cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.80 seconds
+
+
+nu_medium_4_1.wav: 
+Transcription: làm ơn mở đèn.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 3.71 seconds
+
+
+nu_medium_4_2.wav: 
+Transcription: hãy mở cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.83 seconds
+
+
+nu_medium_5_1.wav: 
+Transcription: làm ơn mở đèn.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 3.58 seconds
+
+
+nu_medium_5_2.wav: 
+Transcription: thấy mãi cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.3333333333333333
+Transcription Time: 3.71 seconds
+
+
+nu_medium_6_1.wav: 
+Transcription: làm ơn mở đèn.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 3.71 seconds
+
+
+nu_medium_6_2.wav: 
+Transcription: hãy mở cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 4.03 seconds
+
+
+Nu_medium_7_1.wav: 
+Transcription: lam ơn mở đèn.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.25
+Transcription Time: 3.89 seconds
+
+
+nu_medium_7_2.wav: 
+Transcription: hãy mở cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.87 seconds
+
+
+nu_medium_8_1.wav: 
+Transcription: đàm ơn mở đèn.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.25
+Transcription Time: 3.63 seconds
+
+
+nu_medium_8_2.wav: 
+Transcription: hãy mở cửa sổ cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.0
+Transcription Time: 3.91 seconds
+
+
+nu_medium_9_1.wav: 
+Transcription: làm ơn mở đề.
+Ground Truth: Làm ơn mở đèn.
+Word Error Rate: 0.25
+Transcription Time: 3.95 seconds
+
+
+nu_medium_9_2.wav: 
+Transcription: làm ơn mở đèn phòng khách cho tôi.
+Ground Truth: Hãy mở cửa sổ cho tôi.
+Word Error Rate: 0.8333333333333334
+Transcription Time: 4.05 seconds
+
+
+nu_mocuaso_1.wav: 
+Transcription: mỡ cửa sổ.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.3333333333333333
+Transcription Time: 3.60 seconds
+
+
+nu_mocuaso_10.wav: 
+Transcription: mở cửa sổ.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.0
+Transcription Time: 3.63 seconds
+
+
+nu_mocuaso_2.wav: 
+Transcription: mở cửa sổ.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.0
+Transcription Time: 3.65 seconds
+
+
+nu_mocuaso_3.wav: 
+Transcription: mở cửa số.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.3333333333333333
+Transcription Time: 3.64 seconds
+
+
+nu_mocuaso_4.wav: 
+Transcription: mở cửa sổ ốp.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.6666666666666666
+Transcription Time: 3.79 seconds
+
+
+nu_mocuaso_5.wav: 
+Transcription: mở cửa sổ.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.0
+Transcription Time: 3.56 seconds
+
+
+nu_mocuaso_6.wav: 
+Transcription: mở cửa sổ.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.0
+Transcription Time: 3.60 seconds
+
+
+nu_mocuaso_7.wav: 
+Transcription: mở cửa sổ.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.0
+Transcription Time: 4.05 seconds
+
+
+nu_mocuaso_8.wav: 
+Transcription: mở cửa sổ.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.0
+Transcription Time: 3.67 seconds
+
+
+nu_mocuaso_9.wav: 
+Transcription: mở cửa sổ.
+Ground Truth: Mở cửa sổ.
+Word Error Rate: 0.0
+Transcription Time: 3.84 seconds
+
+
+nu_moden_1.wav: 
+Transcription: mở cửa.
+Ground Truth: Mở đèn.
+Word Error Rate: 0.5
+Transcription Time: 3.66 seconds
+
+
+nu_moden_10.wav: 
+Transcription: mỡ đen.
+Ground Truth: Mở đèn.
+Word Error Rate: 1.0
+Transcription Time: 3.78 seconds
+
+
+nu_moden_2.wav: 
+Transcription: mỡ đèn.
+Ground Truth: Mở đèn.
+Word Error Rate: 0.5
+Transcription Time: 3.61 seconds
+
+
+nu_moden_3.wav: 
+Transcription: mỏ đèn.
+Ground Truth: Mở đèn.
+Word Error Rate: 0.5
+Transcription Time: 4.16 seconds
+
+
+nu_moden_4.wav: 
+Transcription: mở đền.
+Ground Truth: Mở đèn.
+Word Error Rate: 0.5
+Transcription Time: 3.55 seconds
+
+
+nu_moden_5.wav: 
+Transcription: mỡ đen.
+Ground Truth: Mở đèn.
+Word Error Rate: 1.0
+Transcription Time: 3.70 seconds
+
+
+nu_moden_6.wav: 
+Transcription: mớ đèn.
+Ground Truth: Mở đèn.
+Word Error Rate: 0.5
+Transcription Time: 3.76 seconds
+
+
+nu_moden_7.wav: 
+Transcription: mỡ đen.
+Ground Truth: Mở đèn.
+Word Error Rate: 1.0
+Transcription Time: 3.74 seconds
+
+
+nu_moden_8.wav: 
+Transcription: mỡ đèn.
+Ground Truth: Mở đèn.
+Word Error Rate: 0.5
+Transcription Time: 3.68 seconds
+
+
+nu_moden_9.wav: 
+Transcription: mở đèn.
+Ground Truth: Mở đèn.
+Word Error Rate: 0.0
+Transcription Time: 3.54 seconds
+
+
+nu_motivi_1.wav: 
+Transcription: mở ti vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.0
+Transcription Time: 3.61 seconds
+
+
+nu_motivi_10.wav: 
+Transcription: mở ti vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.0
+Transcription Time: 3.69 seconds
+
+
+nu_motivi_2.wav: 
+Transcription: mở ti vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.0
+Transcription Time: 3.54 seconds
+
+
+nu_motivi_3.wav: 
+Transcription: mở ti vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.0
+Transcription Time: 3.69 seconds
+
+
+nu_motivi_4.wav: 
+Transcription: mở ti vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.0
+Transcription Time: 3.70 seconds
+
+
+nu_motivi_5.wav: 
+Transcription: bỏ tivi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 1.0
+Transcription Time: 3.55 seconds
+
+
+nu_motivi_6.wav: 
+Transcription: mở tuy vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.3333333333333333
+Transcription Time: 3.65 seconds
+
+
+nu_motivi_7.wav: 
+Transcription: bò ti vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.3333333333333333
+Transcription Time: 3.66 seconds
+
+
+nu_motivi_8.wav: 
+Transcription: mở ti vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.0
+Transcription Time: 3.51 seconds
+
+
+nu_motivi_9.wav: 
+Transcription: mở ti vi.
+Ground Truth: Mở ti vi.
+Word Error Rate: 0.0
+Transcription Time: 3.52 seconds
+
+

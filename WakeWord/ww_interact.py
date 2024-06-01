@@ -46,6 +46,7 @@ def activate_ww(porcupine, audio_stream):
             pcm = get_next_audio_frame(audio_stream, porcupine.frame_length)
             keyword_index = porcupine.process(pcm)
             if keyword_index >= 0:
+                print(pcm)
                 sys.exit(0)
     except KeyboardInterrupt:
         print("Stopping")

@@ -55,29 +55,29 @@ nlu:
 
 - intent: turn_on_TV
   examples: |
-    - bật tivi
-    - mở tivi
-    - làm ơn bật tivi
-    - hãy mở tivi cho tôi
-    - bật tivi lên
-    - mở tivi phòng khách
-    - vui lòng bật tivi
-    - bật tivi ngoài phòng
-    - bạn có thể bật tivi không
-    - bật tivi phòng ngủ
+    - bật ti vi
+    - mở ti vi
+    - làm ơn bật ti vi
+    - hãy mở ti vi cho tôi
+    - bật ti vi lên
+    - mở ti vi phòng khách
+    - vui lòng bật ti vi
+    - bật ti vi ngoài phòng
+    - bạn có thể bật ti vi không
+    - bật ti vi phòng ngủ
 
 - intent: turn_off_TV
   examples: |
-    - tắt tivi
-    - tắt tivi đi
-    - làm ơn tắt tivi
-    - hãy tắt tivi đi
-    - tắt cái tivi
-    - tắt tivi phòng khách
-    - vui lòng tắt tivi
-    - tắt tivi phòng ngủ
-    - bạn có thể tắt tivi không
-    - tắt tivi trong phòng
+    - tắt ti vi
+    - tắt ti vi đi
+    - làm ơn tắt ti vi
+    - hãy tắt ti vi đi
+    - tắt cái ti vi
+    - tắt ti vi phòng khách
+    - vui lòng tắt ti vi
+    - tắt ti vi phòng ngủ
+    - bạn có thể tắt ti vi không
+    - tắt ti vi trong phòng
 
 - intent: make_coffee
   examples: |

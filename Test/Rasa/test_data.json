@@ -1,0 +1,151 @@
+[
+    {
+        "intent": "light_activate",
+        "examples": [
+            "bật đèn",
+            "làm ơn bật đèn",
+            "bật đèn phòng khách ngay bây giờ",
+            "làm ơn hãy bật đèn lên",
+            "bật đèn cho tôi nhé",
+            "có thể bật đèn không?",
+            "xin hãy bật đèn",
+            "bật cái đèn phòng tắm lên",
+            "cần bật đèn bếp",
+            "hãy giúp tôi bật đèn"
+        ]
+    },
+    {
+        "intent": "light_deactivate",
+        "examples": [
+            "tắt đèn",
+            "tắt đèn phòng ngủ",
+            "làm ơn tắt đèn phòng ngủ đi",
+            "bạn có thể tắt đèn phòng khách không",
+            "vui lòng tắt hết đèn",
+            "tắt ngay đèn bếp đi",
+            "hãy tắt đèn phòng tắm",
+            "có thể tắt đèn ngoài hành lang",
+            "đóng tất cả đèn",
+            "tắt đèn và đi ngủ"
+        ]
+    },
+    {
+        "intent": "open_window",
+        "examples": [
+            "mở cửa sổ",
+            "làm ơn mở cửa sổ",
+            "vui lòng mở cửa sổ phòng khách",
+            "bạn có thể mở cửa sổ phòng ngủ",
+            "hãy kéo cửa sổ lên cho tôi",
+            "mở cửa sổ bếp",
+            "làm ơn mở cửa sổ phòng tắm",
+            "có thể mở cửa sổ không?",
+            "xin hãy mở cửa sổ phòng ngủ",
+            "mở cửa sổ lên nhé"
+        ]
+    },
+    {
+        "intent": "close_window",
+        "examples": [
+            "đóng cửa sổ",
+            "làm ơn đóng cửa sổ lại",
+            "vui lòng đóng cửa sổ phòng ngủ",
+            "bạn có thể đóng cửa sổ phòng khách không",
+            "hãy kéo cửa sổ xuống đi",
+            "đóng cửa sổ phòng bếp",
+            "làm ơn đóng cửa sổ phòng tắm lại",
+            "có thể đóng cửa sổ không?",
+            "xin hãy đóng cửa sổ phòng ngủ",
+            "đóng cửa sổ và đi ngủ"
+        ]
+    },
+    {
+        "intent": "turn_on_TV",
+        "examples": [
+            "bật ti vi",
+            "làm ơn bật ti vi",
+            "vui lòng bật ti vi phòng khách",
+            "bạn có thể bật ti vi ngoài phòng không",
+            "hãy mở ti vi cho tôi xem",
+            "mở ti vi phòng ngủ",
+            "làm ơn bật ti vi lên",
+            "có thể bật ti vi không?",
+            "xin hãy bật ti vi lên",
+            "bật ti vi và xem phim"
+        ]
+    },
+    {
+        "intent": "turn_off_TV",
+        "examples": [
+            "tắt ti vi",
+            "hãy tắt ti vi đi",
+            "vui lòng tắt ti vi phòng khách",
+            "bạn có thể tắt ti vi trong phòng ngủ không",
+            "hãy tắt cái ti vi đi",
+            "tắt ti vi phòng ngủ",
+            "làm ơn tắt ti vi đi",
+            "có thể tắt ti vi không?",
+            "xin hãy tắt ti vi đi",
+            "tắt ti vi và đi ngủ"
+        ]
+    },
+    {
+        "intent": "make_coffee",
+        "examples": [
+            "làm cà phê",
+            "pha cà phê cho tôi",
+            "vui lòng pha cà phê",
+            "bạn có thể pha cà phê không",
+            "hãy pha cho tôi cốc cà phê",
+            "pha cà phê đi",
+            "làm ơn bắt đầu pha cà phê",
+            "có thể pha cà phê không?",
+            "xin hãy pha cà phê",
+            "pha cà phê và mang đến cho tôi"
+        ]
+    },
+    {
+        "intent": "adjust_temperature",
+        "examples": [
+            "tăng nhiệt độ lên",
+            "làm mát phòng",
+            "giảm nhiệt độ xuống",
+            "làm mát phòng",
+            "hãy tăng nhiệt độ",
+            "điều chỉnh nhiệt độ phòng",
+            "làm ấm phòng lên",
+            "bạn có thể điều chỉnh nhiệt độ không",
+            "vui lòng tăng nhiệt độ lên",
+            "tôi cần mát hơn"
+        ]
+    },
+    {
+        "intent": "turn_on_music",
+        "examples": [
+            "mở nhạc",
+            "bật bài hát",
+            "vui lòng phát bài hát",
+            "bạn có thể mở nhạc không",
+            "hãy phát nhạc lên",
+            "bật nhạc đi",
+            "mở bài hát yêu thích",
+            "bật bài hát",
+            "xin hãy phát nhạc",
+            "mở nhạc và thư giãn"
+        ]
+    },
+    {
+        "intent": "end",
+        "examples": [
+            "vậy thôi",
+            "ok",
+            "ô kê",
+            "được",
+            "ừm",
+            "rồi rồi",
+            "đó là tất cả",
+            "chúng ta dừng lại ở đây",
+            "không cần làm gì thêm"
+        ]
+    }
+]

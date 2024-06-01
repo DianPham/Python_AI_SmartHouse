@@ -14,7 +14,6 @@ from VoiceAssistant.voice import speak, play_sound
 import webrtcvad
 import noisereduce as nr
 from rasa.core.agent import Agent
-from rasa.core.channels import channel
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 

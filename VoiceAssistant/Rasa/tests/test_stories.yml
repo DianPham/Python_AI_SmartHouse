@@ -1,91 +1,55 @@
 #### This file contains tests to evaluate that your bot behaves as expected.
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+version: "3.1"
 
 stories:
-- story: happy path 1
-  steps:
-  - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
 
-- story: happy path 2
+- story: light activate story
   steps:
-  - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+  - intent: light_activate
+  - action: utter_light_activate
 
-- story: sad path 1
+- story: light deactivate story
   steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
+  - intent: light_deactivate
+  - action: utter_light_deactivate
 
-- story: sad path 2
+- story: open window story
   steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      not really
-    intent: deny
-  - action: utter_goodbye
+  - intent: open_window
+  - action: utter_open_window
 
-- story: sad path 3
+- story: close window story
   steps:
-  - user: |
-      hi
-    intent: greet
-  - action: utter_greet
-  - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
+  - intent: close_window
+  - action: utter_close_window
 
-- story: say goodbye
+- story: turn on TV story
   steps:
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+  - intent: turn_on_TV
+  - action: utter_turn_on_TV
 
-- story: bot challenge
+- story: turn off TV story
   steps:
-  - user: |
-      are you a bot?
-    intent: bot_challenge
-  - action: utter_iamabot
+  - intent: turn_off_TV
+  - action: utter_turn_off_TV
+
+- story: make coffee story
+  steps:
+  - intent: make_coffee
+  - action: utter_make_coffee
+
+- story: adjiust temperature story
+  steps:
+  - intent: adjiust_temperature
+  - action: utter_adjiust_temperature
+
+- story: turn on music story
+  steps:
+  - intent: turn_on_music
+  - action: utter_turn_on_music
+
+- story: end
+  steps:
+  - intent: end
+  - action: utter_ends
