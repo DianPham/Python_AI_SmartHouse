@@ -98,7 +98,7 @@ def send_audio_to_server(audio_path):
     return transcription_result
 
 def load_rasa_model():
-    speak("Tôi đang khởi động lại, bạn chờ chút nhé")
+    speak("Tôi đang khởi động, bạn chờ chút nhé")
     try:
         global agent
         agent = Agent.load(path_to_rasa_model)
@@ -111,15 +111,7 @@ def load_rasa_model():
 async def get_response(command):
     try:
         response = await agent.handle_text(command)
-        return response[0]["text"]
-    except Exception as e:
-        print(f"Cannot get response: {e}")
-        return None
-    
-async def get_intent(command):
-    try:
-        intent = await agent.parse_message(command)
-        return intent["intent"]["name"]
+        return response
     except Exception as e:
         print(f"Cannot get response: {e}")
         return None
@@ -139,19 +131,17 @@ def in_conversation():
     result = send_audio_to_server(audio_path)  # Send the audio to the server and get the transcription
     print("Received result in {:.2f} seconds.".format(time.time() - start_time))
     print("Transcription Result:", result)
-    try:   
-        response = asyncio.run(get_response(result))
-        intent = asyncio.run(get_intent(result))
-        print(response)
-        print(intent)
-        if intent == "end":
-            speak(response)
-            return
-        speak(response)
-        if intent == "nlu_fallback":
-            in_conversation()
+    try:
+        responses= get_response(result)
+        for message in responses:
+            if 'event' in message and message['event'] == 'session_end':
+                speak(message['text'])
+                return
+            speak(message['text'])
         print("Received result in {:.2f} seconds.".format(time.time() - start_time))
+        in_conversation()  
         os.remove(audio_path)
+        return
     except Exception as e:
         print(f"Failed to send audio to the server: {e}")
 
@@ -161,7 +151,7 @@ def main():
     if not server_thread.is_alive():
         server_thread.start() 
     if agent is None:
-        load_rasa_model()              
+        load_rasa_model()            
     while True:                    
         if detect_wake_word(): # Wait for the wake word to be detected
             speak("Em đây")

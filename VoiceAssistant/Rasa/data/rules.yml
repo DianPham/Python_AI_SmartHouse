@@ -1,3 +1,31 @@
 version: "3.1"
 
 rules:
+  - rule: Activate play song 
+    steps:
+      - intent: provide_song
+      - action: action_play_song
+
+  - rule: Activate play artist 
+    steps:
+      - intent: provide_artist
+      - action: action_play_artist
+
+  - rule: Activate play top song 
+    steps:
+      - intent: turn_on_music
+      - action: action_play_top_song
+
+  - rule: Activate play genre
+    steps:
+      - intent: provide_genre
+      - action: action_play_genre
+  - rule: Activate play song with artist
+    steps:
+      - intent: provide_song_with_artist
+      - action: action_play_song_with_artist
+
+  - rule: Handle fallback outside of form
+    steps:
+      - intent: nlu_fallback
+      - action: action_default_fallback

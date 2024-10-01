@@ -22,7 +22,7 @@ def init_porcupine(current_dir):
     """Initialize the Porcupine wake word engine."""
     keyword_path = os.path.join(current_dir, "wakeword_model.ppn")
     model_path = os.path.join(current_dir, "params_vn.pv")
-    key = "9+JC9F15GbK8t3XxP295t146coC2gls2/ZaTYemWlufw/MMwXGpSIg=="
+    key = "LWnH1h7LDEgAu+7Ec8g7tMT1ClbgFv/HbLCFcQyXn0f/v+bvMve9aQ=="
     
     porcupine = pvporcupine.create(
         access_key=key, 
@@ -41,7 +41,7 @@ def get_next_audio_frame(audio_stream, frame_length):
 def activate_ww(porcupine, audio_stream):
     """Activate wake word detection."""
     try:
-        print("[Bé Ba] Sleeping...zZ")
+        print("[Yumi] Sleeping...zZ")
         while True:
             pcm = get_next_audio_frame(audio_stream, porcupine.frame_length)
             keyword_index = porcupine.process(pcm)

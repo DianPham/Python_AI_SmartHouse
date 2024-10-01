@@ -27,96 +27,91 @@ nlu:
     - tắt đèn ngoài hành lang
     - tắt đèn phòng khách
 
-- intent: open_window
-  examples: |
-    - mở cửa sổ
-    - hãy mở cửa sổ phòng khách
-    - làm ơn mở cửa sổ
-    - kéo cửa sổ lên
-    - mở cửa sổ cho tôi
-    - vui lòng mở cửa sổ
-    - mở cửa sổ phòng ngủ
-    - mở cửa sổ bếp
-    - bạn có thể mở cửa sổ không
-    - mở cửa sổ phòng tắm
-
-- intent: close_window
-  examples: |
-    - đóng cửa sổ
-    - đóng cửa sổ phòng ngủ
-    - làm ơn đóng cửa sổ lại
-    - hãy kéo cửa sổ xuống
-    - đóng lại cửa sổ cho tôi
-    - đóng cửa sổ phòng khách
-    - vui lòng đóng cửa sổ
-    - đóng cửa sổ bếp
-    - bạn có thể đóng cửa sổ không
-    - đóng cửa sổ phòng tắm
-
-- intent: turn_on_TV
-  examples: |
-    - bật ti vi
-    - mở ti vi
-    - làm ơn bật ti vi
-    - hãy mở ti vi cho tôi
-    - bật ti vi lên
-    - mở ti vi phòng khách
-    - vui lòng bật ti vi
-    - bật ti vi ngoài phòng
-    - bạn có thể bật ti vi không
-    - bật ti vi phòng ngủ
-
-- intent: turn_off_TV
-  examples: |
-    - tắt ti vi
-    - tắt ti vi đi
-    - làm ơn tắt ti vi
-    - hãy tắt ti vi đi
-    - tắt cái ti vi
-    - tắt ti vi phòng khách
-    - vui lòng tắt ti vi
-    - tắt ti vi phòng ngủ
-    - bạn có thể tắt ti vi không
-    - tắt ti vi trong phòng
-
-- intent: make_coffee
-  examples: |
-    - làm cà phê
-    - pha cà phê cho tôi
-    - bắt đầu pha cà phê
-    - làm ơn pha cà phê
-    - hãy pha cho tôi cốc cà phê
-    - pha cà phê đi
-    - bạn có thể pha cà phê không
-    - vui lòng pha cà phê
-    - tôi muốn uống cà phê
-    - máy pha cà phê bắt đầu
-
-- intent: adjiust_temperature
-  examples: |
-    - tăng nhiệt độ lên
-    - giảm nhiệt độ xuống
-    - làm mát phòng
-    - hãy tăng nhiệt độ
-    - điều chỉnh nhiệt độ phòng
-    - làm ấm phòng lên
-    - giảm nhiệt độ phòng
-    - bạn có thể điều chỉnh nhiệt độ không
-    - vui lòng tăng nhiệt độ lên
-    - tôi cần mát hơn
-
 - intent: turn_on_music
   examples: |
+    - mở nhạc đi
+    - bật nhạc ngay bây giờ
+    - phát nhạc cho tôi nghe
+    - cho tôi nghe nhạc
+    - bạn có thể bật nhạc lên không?
+    - phát một bài hát thật hay
+    - mở nhạc êm dịu đi
+    - làm ơn phát nhạc
+    - tôi muốn nghe chút nhạc
+    - bật nhạc
     - mở nhạc
-    - bật bài hát
-    - phát nhạc
-    - mở nhạc nhẹ
-    - hãy phát nhạc lên
-    - bật nhạc đi
-    - mở bài hát yêu thích
-    - bạn có thể mở nhạc không
-    - vui lòng phát bài hát
-    - tôi muốn nghe nhạc
+
+- intent: provide_song
+  examples: |
+    - mở bài [như phút ban đầu](song)
+    - phát bài hát [ai mà biết được](song)
+    - bật [dự báo thời tiết hôm nay mưa](song) đi?
+    - bạn có thể phát bài [nếu lúc đó](song) được không?
+    - hãy bật ngay bài [sau lời từ khước](song)
+    - tôi muốn nghe bài [có em chờ](song)
+    - phát nhạc [đừng yêu nữa, em mệt rồi](song)
+    - phát bài [tháng tư là lời nói dối của em](song)
+    - mở [đúng người đúng thời điểm](song)
+    - bật ngay [ngày chưa giông bão](song)
+
+- intent: provide_artist
+  examples: |
+    - phát nhạc của [phan mạnh quỳnh](artist) đi
+    - tôi muốn nghe nhạc của [phúc du](artist)
+    - mở các bài của [vũ](artist)
+    - phát nhạc của [thịnh suy](artist)
+    - cho tôi nghe nhạc của [sơn tùng](artist)
+    - bật nhạc của ca sĩ [đen vâu](artist)
+    - tôi muốn nghe nhạc của [bích phương](artist)
+    - phát bài của [hà anh tuấn](artist) đi
+    - bật những bài của [min](artist)
+    - phát nhạc của [ngọt](artist)
+
+- intent: provide_song_with_artist
+  examples: |
+    - phát bài [có chàng trai viết lên cây](song) của [phan mạnh quỳnh](artist)
+    - tôi muốn nghe bài [đom đóm](song) của [jack](artist)
+    - mở bài [chạy ngay đi](song) của [sơn tùng](artist)
+    - bật bài [tháng tư là lời nói dối của em](song) của [hà anh tuấn](artist)
+    - phát bài [anh đếch cần gì nhiều ngoài em](song) của [đen vâu](artist)
+    - bật bài [một mình có buồn không](song) của [thịnh suy](artist)
+    - phát bài [người ta nói](song) của [ngọt](artist)
+    - mở bài [mưa trên cuộc tình](song) của [sơn tùng](artist)
+    - tôi muốn nghe bài [có em chờ](song) của [min](artist)
+    - bật bài [từ đó](song) của [phan mạnh quỳnh](artist)
+    - phát bài [như ngày hôm qua](song) của [sơn tùng](artist)
+    - tôi muốn nghe bài [từ đó](song) của [phan mạnh quỳnh](artist)
+    - bật bài [một mình có buồn không](song) của [thịnh suy](artist)
+    - nghe bài [người ta nói](song) của [ngọt](artist)
+    - mở bài [em của ngày hôm qua](song) của [sơn tùng](artist)
+    - phát nhạc [ánh nắng của anh](song) của [đức phúc](artist)
+    - chơi bài [tình yêu màu nắng](song) của [đoàn thùy trang](artist)
+    - mở bài hát [người ấy](song) của [trịnh thăng bình](artist)
+    - tôi muốn nghe bài [sau tất cả](song) của [erik](artist)
+
+
+- intent: provide_genre
+  examples: |
+    - mở vài bài nhạc [rock](genre) đi
+    - tôi muốn nghe nhạc [jazz](genre) thật hay
+    - phát những bài nhạc [pop](genre) hay nhất
+    - bật nhạc [rap](genre) thật sôi động
+    - mở một vài bản nhạc [hiphop](genre)
+    - phát nhạc [ballad](genre) nhẹ nhàng
+    - bật mấy bài nhạc [indie](genre)
+    - mở các bài hát thuộc thể loại [classical](genre)
+    - tôi muốn nghe nhạc [electronic](genre)
+    - phát vài bài nhạc [funk](genre)
+# - intent: ask_for_weather
+#   examples: |
+#     - [thời tiết](type) [hôm nay](date) thế nào?
+#     - [hôm nay](date) có [mưa](type) không?
+#     - dự báo [thời tiết](type) [ngày mai](date) là gì?
+#     - [nhiệt độ](type) [hiện tại](type) bao nhiêu?
+#     - [thời tiết](type) [cuối tuần](date) có đẹp không?
+#     - xem [thời tiết](type) ở [hà nội](location)
+#     - có [mưa](type) [chiều nay](date) không?
+#     - xem dự báo [thời tiết] [bây giờ]
 
 - intent: end
   examples: |
@@ -126,4 +121,22 @@ nlu:
     - được
     - ừm
     - rồi rồi
+
+- regex: song
+  examples: |
+    - .*(bài hát|phát|nghe|bài) [A-Za-z0-9\s]+
+    
+- regex: artist
+  examples: |
+    - .*(của) [A-Za-z0-9\s]+
+
+- regex: genre
+  examples: |
+    - .*(nhạc) [A-Za-z\s]+
+
+- intent: nlu_fallback
+  examples: |
+    - [blah blah](unknown)
+    - [xyz](unknown)
+    - [unrelated statement](unknown)
 

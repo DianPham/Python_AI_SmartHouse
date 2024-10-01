@@ -1,95 +1,108 @@
 version: "3.1"
 
 intents:
-  - need_toilet
   - light_activate
   - light_deactivate
-  - open_window
-  - close_window
-  - turn_on_TV
-  - turn_off_TV
-  - make_coffee
-  - adjiust_temperature
   - turn_on_music
   - end
+  - provide_song
+  - provide_artist
+  - provide_genre
+  - provide_song_with_artist
+
+entities:
+  - song
+  - artist
+  - genre
+
+actions:
+  - action_end_conversation
+  - action_play_top_song
+  - action_play_artist
+  - action_play_genre
+  - action_play_song
+  - action_play_song_with_artist
+  - action_default_fallback
+
+slots:
+  song:
+    type: text
+    mappings:
+      - type: from_text
+  artist:
+    type: text
+    mappings:
+      - type: from_text
+  genre:
+    type: text
+    mappings:
+      - type: from_text
+  fallback_count:
+    type: float
+    initial_value: 0
+    mappings:
+      - type: from_intent
+        value: 0
+        intent: nlu_fallback
+
 
 responses:
+  utter_ask_song:
+    - text: "anh muốn nghe bài hát gì?"
+
+  utter_ask_artist:
+    - text: "không biết bài này là của ai anh nhỉ"
+  
+  utter_ask_genre:
+    - text: "bài này thuộc thể loại nào vậy anh"
+
   utter_light_activate:
-  - text: "Đã bật đèn cho bạn."
-  - text: "Đèn đã được mở."
-  - text: "Tôi đã bật đèn như bạn yêu cầu."
-  - text: "Đèn phòng khách đã sáng."
-  - text: "Xong, đèn đã được bật."
+    - text: "Đã bật đèn cho anh."
+    - text: "Đèn đã được mở."
+    - text: "Em đã bật đèn như anh yêu cầu."
+    - text: "Đèn phòng khách đã sáng."
+    - text: "Xong, đèn đã được bật."
 
   utter_light_deactivate:
-  - text: "Đèn đã tắt."
-  - text: "Tôi đã tắt đèn."
-  - text: "Đèn đã được tắt theo yêu cầu của bạn."
-  - text: "Đã tắt đèn, cần gì thêm không?"
-  - text: "Xong, đèn đã tắt."
-
-  utter_open_window:
-  - text: "Cửa sổ đã mở."
-  - text: "Tôi đã mở cửa sổ cho bạn."
-  - text: "Cửa sổ phòng khách đã được mở."
-  - text: "Đã mở cửa sổ, không khí trong lành hơn rồi đấy."
-  - text: "Cửa sổ đã mở, bạn muốn làm gì tiếp theo?"
-
-  utter_close_window:
-  - text: "Cửa sổ đã đóng."
-  - text: "Tôi đã đóng cửa sổ lại rồi."
-  - text: "Cửa sổ phòng ngủ đã đóng."
-  - text: "Xong, cửa sổ đã được đóng kín."
-  - text: "Đã đóng cửa sổ, bạn cần gì thêm không?"
-
-  utter_turn_on_TV:
-  - text: "Tivi đã bật."
-  - text: "Bật tivi cho bạn rồi đấy."
-  - text: "Tivi phòng khách đã được mở."
-  - text: "Xong, tivi đã bật. Có chương trình bạn thích đang chiếu đấy."
-  - text: "Tivi đã được bật, hãy thưởng thức buổi tối của bạn."
-
-  utter_turn_off_TV:
-  - text: "Tivi đã tắt."
-  - text: "Tôi đã tắt tivi giúp bạn."
-  - text: "Tivi đã được tắt."
-  - text: "Xong, tivi đã tắt."
-  - text: "Tất cả đã xong, tivi đã tắt."
-  
-  utter_make_coffee:
-  - text: "Đang pha cà phê cho bạn."
-  - text: "Cà phê sẽ sẵn sàng trong ít phút."
-  - text: "Tôi đang pha cà phê, chờ chút nhé."
-  - text: "Cà phê của bạn sắp sẵn sàng."
-  - text: "Pha cà phê ngay đây, bạn sẽ thích mùi của nó."
-
-  utter_adjiust_temperature:
-  - text: "Nhiệt độ đã điều chỉnh theo yêu cầu của bạn."
-  - text: "Tôi đã tăng nhiệt độ lên rồi."
-  - text: "Nhiệt độ phòng đã giảm, mát mẻ hơn rồi đấy."
-  - text: "Đã điều chỉnh nhiệt độ phòng như bạn muốn."
-  - text: "Nhiệt độ đã được thiết lập, cảm thấy thế nào?"
+    - text: "Đèn đã tắt."
+    - text: "Em đã tắt đèn."
+    - text: "Đèn đã được tắt theo yêu cầu của anh."
+    - text: "Đã tắt đèn, cần gì thêm không?"
+    - text: "Xong, đèn đã tắt."
 
   utter_turn_on_music:
-  - text: "Nhạc đã được bật."
-  - text: "Đang phát bài hát bạn yêu thích."
-  - text: "Nhạc đã mở, hãy thả lỏng và thưởng thức."
-  - text: "Tận hưởng bản nhạc này nhé."
-  - text: "Bật nhạc thành công, bạn muốn nghe gì tiếp theo?"
+    - text: "Nhạc đã được bật."
+    - text: "Đang phát bài hát anh yêu thích."
+    - text: "Nhạc đã mở, hãy thả lỏng và thưởng thức."
+    - text: "Tận hưởng bản nhạc này nhé."
+  
+  utter_provide_song:
+    - text: "Và đây là bài {song}"
+    - text: "Đang phát bài hát {song}."
+    - text: "Nhạc đã mở, hãy thả lỏng và thưởng thức {song}."
+    - text: "Tận hưởng {song} nhé."
+
+  utter_provide_artist:
+    - text: "Và đây là danh sách nhạc của {artist}"
+    - text: "Đang phát bài hát của {artist}."
+    - text: "Nhạc đã mở, hãy thả lỏng và thưởng thức các bài hát của {artist}."
+    - text: "Tận hưởng bài hát của {artist} nhé."
+
+  utter_provide_genre:
+    - text: "Đã mở thể loại {genre} cho anh."
+  
+  utter_provide_song_with_artist:
+    - text: "Đã mở bài {song} của {artist} cho anh."
 
   utter_end:
-  - text: "Vâng ạ, nếu có cần gì thì cứ gọi em nhé"
-  - text: "Vâng chúc một ngày tốt lành ạ"
-  - text: "Dạ chào tạm biệt"
-  - text: "Em đi đây ạ"
-  
-  utter_unclear:
-  - text: "Em chưa hiểu ý mình lắm ạ, mình nói lại giúp em được không"
+    - text: "Nếu có cần gì thì cứ gọi em nhé"
+    - text: "Chúc một ngày tốt lành ạ"
+    - text: "Em đi đây ạ"
+    - text: "Bái bai anh nhé"
 
-  utter_default:
-  - text: "Em chưa hiểu ý mình lắm ạ, mình nói lại giúp em được không"
-  - text: "Xin lỗi nhưng mình nói lại giúp em được không ạ, em chưa nghe rõ"
-
+  utter_default_fallback:
+    - text: "Em chưa hiểu ý mình lắm ạ, mình nói lại giúp em được không"
+    - text: "Xin lỗi nhưng mình nói lại giúp em được không ạ, em chưa nghe rõ"
 
 session_config:
   session_expiration_time: 60

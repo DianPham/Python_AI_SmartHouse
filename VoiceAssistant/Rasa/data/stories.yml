@@ -6,48 +6,16 @@ stories:
   steps:
   - intent: light_activate
   - action: utter_light_activate
+  - action: action_end_conversation
 
 - story: light deactivate story
   steps:
   - intent: light_deactivate
   - action: utter_light_deactivate
+  - action: action_end_conversation
 
-- story: open window story
-  steps:
-  - intent: open_window
-  - action: utter_open_window
-
-- story: close window story
-  steps:
-  - intent: close_window
-  - action: utter_close_window
-
-- story: turn on TV story
-  steps:
-  - intent: turn_on_TV
-  - action: utter_turn_on_TV
-
-- story: turn off TV story
-  steps:
-  - intent: turn_off_TV
-  - action: utter_turn_off_TV
-
-- story: make coffee story
-  steps:
-  - intent: make_coffee
-  - action: utter_make_coffee
-
-- story: adjiust temperature story
-  steps:
-  - intent: adjiust_temperature
-  - action: utter_adjiust_temperature
-
-- story: turn on music story
-  steps:
-  - intent: turn_on_music
-  - action: utter_turn_on_music
 
 - story: end
   steps:
   - intent: end
-  - action: utter_end
+  - action: action_end_conversation
