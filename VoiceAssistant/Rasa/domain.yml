@@ -9,11 +9,15 @@ intents:
   - provide_artist
   - provide_genre
   - provide_song_with_artist
+  - ask_for_weather
+  - inform_province
 
 entities:
   - song
   - artist
   - genre
+  - date
+  - location
 
 actions:
   - action_end_conversation
@@ -23,20 +27,58 @@ actions:
   - action_play_song
   - action_play_song_with_artist
   - action_default_fallback
+  - action_query_weather
 
 slots:
   song:
     type: text
     mappings:
-      - type: from_text
+      - type: from_entity
+        entity: song
+    influence_conversation: true
+
   artist:
     type: text
     mappings:
-      - type: from_text
+      - type: from_entity
+        entity: artist
+    influence_conversation: true
+
   genre:
     type: text
     mappings:
-      - type: from_text
+      - type: from_entity
+        entity: genre
+    influence_conversation: true
+
+  clarify_district:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: clarify_district
+    influence_conversation: true
+
+  specific_date:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: specific_date
+    influence_conversation: true
+
+  location:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: location
+    influence_conversation: true
+
+  date:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: date
+    influence_conversation: true
+  
   fallback_count:
     type: float
     initial_value: 0

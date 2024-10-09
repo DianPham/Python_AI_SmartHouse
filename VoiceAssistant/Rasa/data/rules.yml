@@ -25,6 +25,26 @@ rules:
       - intent: provide_song_with_artist
       - action: action_play_song_with_artist
 
+  # Rule to handle the weather query
+  - rule: Ask for weather
+    steps:
+      - intent: ask_for_weather
+      - action: action_query_weather
+      - slot_was_set:
+          - clarify_district: null  # Explicitly set this to null if not used
+          - specific_date: null
+
+  # Rule to handle province clarification when there is ambiguity
+  - rule: Ask for province clarification
+    steps:
+      - action: action_query_weather
+      - slot_was_set:
+          - clarify_district: true  # Slot set when clarification is needed
+          - specific_date: true
+      - action: action_listen  # Wait for the user to clarify
+      - intent: inform_province  # User clarifies the province
+      - action: action_query_weather
+
   - rule: Handle fallback outside of form
     steps:
       - intent: nlu_fallback

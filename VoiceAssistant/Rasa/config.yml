@@ -13,19 +13,24 @@ assistant_id: 20240519-034145-silver-suitcase
 language: vi
 # pipeline: null
 pipeline:
-  - name: VietnameseTokenizer
+  - name: WhitespaceTokenizer
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
-  - name: RegexEntityExtractor
   - name: CountVectorsFeaturizer
+    analyzer: word
+    min_ngram: 1
+    max_ngram: 2
   - name: DIETClassifier
     epochs: 300  # Possibly increase training epochs
-    learning_rate: 0.002
+    entity_recognition: True
+    constrain_similarities: True
+    model_confidence: "softmax"
+    BILOU_flag: True 
   - name: EntitySynonymMapper
   - name: ResponseSelector
     epochs: 100
   - name: FallbackClassifier
-    threshold: 0.7
+    threshold: 0.4
     ambiguity_threshold: 0.1
 # # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
 # # If you'd like to customize it, uncomment and adjust the pipeline.

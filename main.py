@@ -139,7 +139,7 @@ def in_conversation():
                 return
             speak(message['text'])
         print("Received result in {:.2f} seconds.".format(time.time() - start_time))
-        in_conversation()  
+        in_conversation()
         os.remove(audio_path)
         return
     except Exception as e:

@@ -30,7 +30,7 @@ nlu:
 - intent: turn_on_music
   examples: |
     - mở nhạc đi
-    - bật nhạc ngay bây giờ
+    - bật nhạc ngay
     - phát nhạc cho tôi nghe
     - cho tôi nghe nhạc
     - bạn có thể bật nhạc lên không?
@@ -102,16 +102,129 @@ nlu:
     - mở các bài hát thuộc thể loại [classical](genre)
     - tôi muốn nghe nhạc [electronic](genre)
     - phát vài bài nhạc [funk](genre)
-# - intent: ask_for_weather
-#   examples: |
-#     - [thời tiết](type) [hôm nay](date) thế nào?
-#     - [hôm nay](date) có [mưa](type) không?
-#     - dự báo [thời tiết](type) [ngày mai](date) là gì?
-#     - [nhiệt độ](type) [hiện tại](type) bao nhiêu?
-#     - [thời tiết](type) [cuối tuần](date) có đẹp không?
-#     - xem [thời tiết](type) ở [hà nội](location)
-#     - có [mưa](type) [chiều nay](date) không?
-#     - xem dự báo [thời tiết] [bây giờ]
+
+- intent: ask_for_weather
+  examples: |
+    - thời tiết [ngày 5 tháng 6](date) thế nào
+    - [ngày mai](date) có nắng không
+    - dự báo thời tiết [ngày 10 tháng 12](date) ở [hồ chí minh](location) là gì
+    - nhiệt độ [hà nội](location) [ngày hôm qua](date) bao nhiêu
+    - thời tiết [chiều nay](date) có lạnh không
+    - dự báo thời tiết [ngày kia](date) thế nào
+    - xem thời tiết ở [đà nẵng](location) [ngày 20 tháng 7](date)
+    - thời tiết [tuần sau](date) tại [huế](location) có mưa không
+    - trời có mưa [ngày 25 tháng 12](date) ở [cần thơ](location) không
+    - dự báo thời tiết [ngày 30 tháng 4](date) thế nào
+    - xem dự báo thời tiết [hôm nay](date) tại [vũng tàu](location)
+    - trời có lạnh [ngày kia](date) không
+    - thời tiết [sài gòn](location) [ngày 1 tháng 1](date) như thế nào
+    - có mưa [ngày 15 tháng 8](date) ở [nha trang](location) không
+    - dự báo thời tiết [tuần này](date) tại [quy nhơn](location) là gì
+    - trời có nắng ở [biên hòa](location) [ngày 2 tháng 3](date) không
+    - nhiệt độ [thành phố hồ chí minh](location) [ngày 25 tháng 9](date) bao nhiêu
+    - xem dự báo thời tiết [bây giờ](date) ở [đồng nai](location)
+    - thời tiết ở [phú quốc](location) [ngày 8 tháng 8](date) có đẹp không
+    - dự báo thời tiết [ngày 15 tháng 10](date) ở [hải phòng](location)
+    - thời tiết thế nào
+    - thời tiết ra sao
+    - thời tiết đang như thế nào
+    - dự báo thời tiết là gì
+    - thời tiết có mưa không
+    - có mưa không
+    - thời tiết có đẹp không
+    - nhiệt độ ngoài trời bao nhiêu
+    - tình hình thời tiết thế nào
+    - trời có nắng không
+    - độ ẩm ngoài trời như thế nào
+    - thời tiết [ngày mai](date) thế nào?
+    - thời tiết [hiện tại](date) ra sao?
+    - thời tiết [tuần sau](date) có mưa không?
+    - [bây giờ](date) có đang mưa không?
+    - dự báo thời tiết [ngày kia](date) là gì?
+    - tình hình thời tiết [hôm nay](date) ra sao?
+    - thời tiết vào [ngày 15 tháng 10](date) thế nào?
+    - có mưa [ngày 20 tháng 10](date) không?
+    - dự báo thời tiết [cuối tuần](date) là gì?
+    - trời có nắng vào [ngày 5 tháng 11](date) không?
+    - nhiệt độ [ngày mai](date) là bao nhiêu?
+    - [ngày mai](date) trời có mưa không?
+    - thời tiết ở [hà nội](location) thế nào?
+    - dự báo thời tiết ở [sài gòn](location) là gì?
+    - ở [đà nẵng](location) có mưa không?
+    - trời có nắng ở [hải phòng](location) không?
+    - thời tiết ở [nha trang](location) có đẹp không?
+    - ở [huế](location) có mưa không?
+    - nhiệt độ ở [sapa](location) thế nào?
+    - thời tiết [hồ chí minh](location) ra sao?
+    - dự báo thời tiết tại [vũng tàu](location) là gì?
+    - ở [cần thơ](location) trời thế nào?
+
+- intent: inform_province
+  examples: |
+    - [an giang](location)
+    - [bà rịa - vũng tàu](location)
+    - [bắc giang](location)
+    - [bắc kạn](location)
+    - [bạc liêu](location)
+    - [bắc ninh](location)
+    - [bến tre](location)
+    - [bình định](location)
+    - [bình dương](location)
+    - [bình phước](location)
+    - [bình thuận](location)
+    - [cà mau](location)
+    - [cần thơ](location)
+    - [cao bằng](location)
+    - [đà nẵng](location)
+    - [đắk lắk](location)
+    - [đắk nông](location)
+    - [điện biên](location)
+    - [đồng nai](location)
+    - [đồng tháp](location)
+    - [gia lai](location)
+    - [hà giang](location)
+    - [hà nam](location)
+    - [hà nội](location)
+    - [hà tĩnh](location)
+    - [hải dương](location)
+    - [hải phòng](location)
+    - [hậu giang](location)
+    - [hồ chí minh](location)
+    - [hoà bình](location)
+    - [hưng yên](location)
+    - [khánh hòa](location)
+    - [kiên giang](location)
+    - [kon tum](location)
+    - [lai châu](location)
+    - [lâm đồng](location)
+    - [lạng sơn](location)
+    - [lào cai](location)
+    - [long an](location)
+    - [nam định](location)
+    - [nghệ an](location)
+    - [ninh bình](location)
+    - [ninh thuận](location)
+    - [phú thọ](location)
+    - [phú yên](location)
+    - [quảng bình](location)
+    - [quảng nam](location)
+    - [quảng ngãi](location)
+    - [quảng ninh](location)
+    - [quảng trị](location)
+    - [sóc trăng](location)
+    - [sơn la](location)
+    - [tây ninh](location)
+    - [thái bình](location)
+    - [thái nguyên](location)
+    - [thanh hóa](location)
+    - [sài gòn](location)
+    - [huế](location)
+    - [tiền giang](location)
+    - [trà vinh](location)
+    - [tuyên quang](location)
+    - [vĩnh long](location)
+    - [vĩnh phúc](location)
+    - [yên bái](location)
 
 - intent: end
   examples: |
@@ -133,6 +246,793 @@ nlu:
 - regex: genre
   examples: |
     - .*(nhạc) [A-Za-z\s]+
+
+- regex: date
+  examples: |
+    - hôm nay
+    - ngày mai
+    - ngày kia
+    - ngày [0-9]{1,2} tháng [0-9]{1,2}
+    - hiện tại
+    - cuối tuần
+    - ngày mốt
+    - bây giờ
+
+- lookup: location
+  examples: |
+    - an giang
+    - bà rịa - vũng tàu
+    - bắc giang
+    - bắc kạn
+    - bạc liêu
+    - bắc ninh
+    - bến tre
+    - bình định
+    - bình dương
+    - bình phước
+    - bình thuận
+    - cà mau
+    - cần thơ
+    - cao bằng
+    - đà nẵng
+    - đắk lắk
+    - đắk nông
+    - điện biên
+    - đồng nai
+    - đồng tháp
+    - gia lai
+    - hà giang
+    - hà nam
+    - hà nội
+    - hà tĩnh
+    - hải dương
+    - hải phòng
+    - hậu giang
+    - hồ chí minh
+    - hoà bình
+    - hưng yên
+    - khánh hòa
+    - kiên giang
+    - kon tum
+    - lai châu
+    - lâm đồng
+    - lạng sơn
+    - lào cai
+    - long an
+    - nam định
+    - nghệ an
+    - ninh bình
+    - ninh thuận
+    - phú thọ
+    - phú yên
+    - quảng bình
+    - quảng nam
+    - quảng ngãi
+    - quảng ninh
+    - quảng trị
+    - sóc trăng
+    - sơn la
+    - tây ninh
+    - thái bình
+    - thái nguyên
+    - thanh hóa
+    - thừa thiên huế
+    - tiền giang
+    - trà vinh
+    - tuyên quang
+    - vĩnh long
+    - vĩnh phúc
+    - yên bái
+    - an phú
+    - châu đốc
+    - châu phú
+    - châu thành
+    - chợ mới
+    - long xuyên
+    - phú tân
+    - tân châu
+    - thoại sơn
+    - tịnh biên
+    - tri tôn
+    - bà rịa
+    - châu đức
+    - đất đỏ
+    - long điền
+    - tân thành
+    - vũng tàu
+    - xuyên mộc
+    - bắc giang
+    - hiệp hòa
+    - lạng giang
+    - lục nam
+    - lục ngạn
+    - sơn động
+    - tân yên
+    - việt yên
+    - yên dũng
+    - yên thế
+    - ba bể
+    - bạch thông
+    - chợ đồn
+    - chợ mới
+    - na rì
+    - ngân sơn
+    - pác nặm
+    - thành phố bắc kạn
+    - bạc liêu
+    - đông hải
+    - giá rai
+    - hoà bình
+    - hồng dân
+    - phước long
+    - vĩnh lợi
+    - bắc ninh
+    - gia bình
+    - lương tài
+    - quế võ
+    - thuận thành
+    - tiên du
+    - từ sơn
+    - yên phong
+    - ba tri
+    - bến tre
+    - bình đại
+    - châu thành
+    - chợ lách
+    - giồng trôm
+    - mỏ cày bắc
+    - mỏ cày nam
+    - thạnh phú
+    - an lão
+    - an nhơn
+    - hoài ân
+    - hoài nhơn
+    - phù cát
+    - phù mỹ
+    - qui nhơn
+    - tây sơn
+    - tuy phước
+    - vân canh
+    - vĩnh thạnh
+    - bắc tân uyên
+    - bàu bàng
+    - bến cát
+    - dầu tiếng
+    - dĩ an
+    - phú giáo
+    - tân uyên
+    - thủ dầu một
+    - thuận an
+    - bình long
+    - bù đăng
+    - bù đốp
+    - bù gia mập
+    - chơn thành
+    - đồng phú
+    - đồng xoài
+    - hớn quản
+    - lộc ninh
+    - phú riềng
+    - phước long
+    - bắc bình
+    - đức linh
+    - hàm tân
+    - hàm thuận bắc
+    - hàm thuận nam
+    - la gi
+    - phan thiết
+    - phú quí
+    - tánh linh
+    - tuy phong
+    - cà mau
+    - cái nước
+    - đầm dơi
+    - năm căn
+    - ngọc hiển
+    - phú tân
+    - thới bình
+    - trần văn thời
+    - u minh
+    - bình thuỷ
+    - cái răng
+    - cờ đỏ
+    - ninh kiều
+    - ô môn
+    - phong điền
+    - thới lai
+    - thốt nốt
+    - vĩnh thạnh
+    - bảo lạc
+    - bảo lâm
+    - cao bằng
+    - hạ lang
+    - hà quảng
+    - hoà an
+    - nguyên bình
+    - phục hoà
+    - quảng uyên
+    - thạch an
+    - thông nông
+    - trà lĩnh
+    - trùng khánh
+    - cẩm lệ
+    - hải châu
+    - hòa vang
+    - liên chiểu
+    - ngũ hành sơn
+    - sơn trà
+    - thanh khê
+    - buôn đôn
+    - buôn ma thuột
+    - cư kuin
+    - cư m'gar
+    - ea h'leo
+    - ea kar
+    - ea súp
+    - krông a na
+    - krông bông
+    - krông búk
+    - krông năng
+    - krông pắc
+    - lắk
+    - m'đrắk
+    - thị xã buôn hồ
+    - cư jút
+    - đăk glong
+    - đắk mil
+    - đắk r'lấp
+    - đắk song
+    - gia nghĩa
+    - krông nô
+    - tuy đức
+    - điện biên
+    - điện biên đông
+    - điện biên phủ
+    - mường ảng
+    - mường chà
+    - mường nhé
+    - nậm pồ
+    - thị xã mường lay
+    - tủa chùa
+    - tuần giáo
+    - biên hòa
+    - cẩm mỹ
+    - định quán
+    - long khánh
+    - long thành
+    - nhơn trạch
+    - tân phú
+    - thống nhất
+    - trảng bom
+    - vĩnh cửu
+    - xuân lộc
+    - cao lãnh
+    - cao lãnh (thành phố)
+    - châu thành
+    - hồng ngự
+    - hồng ngự (thị xã)
+    - lai vung
+    - lấp vò
+    - sa đéc
+    - tam nông
+    - tân hồng
+    - thanh bình
+    - tháp mười
+    - an khê
+    - ayun pa
+    - chư păh
+    - chư prông
+    - chư pưh
+    - chư sê
+    - đăk đoa
+    - đăk pơ
+    - đức cơ
+    - ia grai
+    - ia pa
+    - kbang
+    - kông chro
+    - krông pa
+    - mang yang
+    - phú thiện
+    - pleiku
+    - bắc mê
+    - bắc quang
+    - đồng văn
+    - hà giang
+    - hoàng su phì
+    - mèo vạc
+    - quản bạ
+    - quang bình
+    - vị xuyên
+    - xín mần
+    - yên minh
+    - bình lục
+    - duy tiên
+    - kim bảng
+    - lý nhân
+    - phủ lý
+    - thanh liêm
+    - ba đình
+    - ba vì
+    - bắc từ liêm
+    - cầu giấy
+    - chương mỹ
+    - đan phượng
+    - đông anh
+    - đống đa
+    - gia lâm
+    - hà đông
+    - hai bà trưng
+    - hoài đức
+    - hoàn kiếm
+    - hoàng mai
+    - long biên
+    - mê linh
+    - mỹ đức
+    - nam từ liêm
+    - phú xuyên
+    - phúc thọ
+    - quốc oai
+    - sóc sơn
+    - sơn tây
+    - tây hồ
+    - thạch thất
+    - thanh oai
+    - thanh trì
+    - thanh xuân
+    - thường tín
+    - ứng hòa
+    - cẩm xuyên
+    - can lộc
+    - đức thọ
+    - hà tĩnh
+    - hồng lĩnh
+    - hương khê
+    - hương sơn
+    - kỳ anh
+    - kỳ anh (thị xã)
+    - lộc hà
+    - nghi xuân
+    - thạch hà
+    - vũ quang
+    - bình giang
+    - cẩm giàng
+    - chí linh
+    - gia lộc
+    - hải dương
+    - kim thành
+    - kinh môn
+    - nam sách
+    - ninh giang
+    - thanh hà
+    - thanh miện
+    - tứ kỳ
+    - an dương
+    - an lão
+    - bạch long vĩ
+    - cát hải
+    - đồ sơn
+    - dương kinh
+    - hải an
+    - hồng bàng
+    - kiến an
+    - kiến thuỵ
+    - lê chân
+    - ngô quyền
+    - thuỷ nguyên
+    - tiên lãng
+    - vĩnh bảo
+    - châu thành
+    - châu thành a
+    - long mỹ
+    - long mỹ (thị xã)
+    - ngã bảy
+    - phụng hiệp
+    - vị thanh
+    - vị thuỷ
+    - bình chánh
+    - bình tân
+    - bình thạnh
+    - cần giờ
+    - củ chi
+    - gò vấp
+    - hóc môn
+    - nhà bè
+    - phú nhuận
+    - quận 1
+    - quận 10
+    - quận 11
+    - quận 12
+    - quận 2
+    - quận 3
+    - quận 4
+    - quận 5
+    - quận 6
+    - quận 7
+    - quận 8
+    - quận 9
+    - tân bình
+    - tân phú
+    - thủ đức
+    - cao phong
+    - đà bắc
+    - hòa bình
+    - kim bôi
+    - kỳ sơn
+    - lạc sơn
+    - lạc thủy
+    - lương sơn
+    - mai châu
+    - tân lạc
+    - yên thủy
+    - ân thi
+    - hưng yên
+    - khoái châu
+    - kim động
+    - mỹ hào
+    - phù cừ
+    - tiên lữ
+    - văn giang
+    - văn lâm
+    - yên mỹ
+    - cam lâm
+    - cam ranh
+    - diên khánh
+    - khánh sơn
+    - khánh vĩnh
+    - nha trang
+    - ninh hòa
+    - vạn ninh
+    - an biên
+    - an minh
+    - châu thành
+    - giang thành
+    - giồng riềng
+    - gò quao
+    - hà tiên
+    - hòn đất
+    - kiên hải
+    - kiên lương
+    - phú quốc
+    - rạch giá
+    - tân hiệp
+    - u minh thượng
+    - vĩnh thuận
+    - đắk glei
+    - đắk hà
+    - đắk tô
+    - ia h' drai
+    - kon plông
+    - kon rẫy
+    - kon tum
+    - ngọc hồi
+    - sa thầy
+    - tu mơ rông
+    - lai châu
+    - mường tè
+    - nậm nhùn
+    - phong thổ
+    - sìn hồ
+    - tam đường
+    - tân uyên
+    - than uyên
+    - bảo lâm
+    - bảo lộc
+    - cát tiên
+    - đạ huoai
+    - đà lạt
+    - đạ tẻh
+    - đam rông
+    - di linh
+    - đơn dương
+    - đức trọng
+    - lạc dương
+    - lâm hà
+    - bắc sơn
+    - bình gia
+    - cao lộc
+    - chi lăng
+    - đình lập
+    - hữu lũng
+    - lạng sơn
+    - lộc bình
+    - tràng định
+    - văn lãng
+    - văn quan
+    - bắc hà
+    - bảo thắng
+    - bảo yên
+    - bát xát
+    - lào cai
+    - mường khương
+    - sa pa
+    - si ma cai
+    - văn bàn
+    - bến lức
+    - cần đước
+    - cần giuộc
+    - châu thành
+    - đức hòa
+    - đức huệ
+    - kiến tường
+    - mộc hóa
+    - tân an
+    - tân hưng
+    - tân thạnh
+    - tân trụ
+    - thạnh hóa
+    - thủ thừa
+    - vĩnh hưng
+    - giao thủy
+    - hải hậu
+    - mỹ lộc
+    - nam định
+    - nam trực
+    - nghĩa hưng
+    - trực ninh
+    - vụ bản
+    - xuân trường
+    - ý yên
+    - anh sơn
+    - con cuông
+    - cửa lò
+    - diễn châu
+    - đô lương
+    - hoàng mai
+    - hưng nguyên
+    - kỳ sơn
+    - nam đàn
+    - nghi lộc
+    - nghĩa đàn
+    - quế phong
+    - quỳ châu
+    - quỳ hợp
+    - quỳnh lưu
+    - tân kỳ
+    - thái hoà
+    - thanh chương
+    - tương dương
+    - vinh
+    - yên thành
+    - gia viễn
+    - hoa lư
+    - kim sơn
+    - nho quan
+    - ninh bình
+    - tam điệp
+    - yên khánh
+    - yên mô
+    - bác ái
+    - ninh hải
+    - ninh phước
+    - ninh sơn
+    - phan rang-tháp chàm
+    - thuận bắc
+    - thuận nam
+    - cẩm khê
+    - đoan hùng
+    - hạ hoà
+    - lâm thao
+    - phù ninh
+    - phú thọ
+    - tam nông
+    - tân sơn
+    - thanh ba
+    - thanh sơn
+    - thanh thuỷ
+    - việt trì
+    - yên lập
+    - đông hòa
+    - đồng xuân
+    - phú hoà
+    - sơn hòa
+    - sông cầu
+    - sông hinh
+    - tây hoà
+    - tuy an
+    - tuy hoà
+    - ba đồn
+    - bố trạch
+    - lệ thủy
+    - minh hóa
+    - quảng ninh
+    - quảng trạch
+    - thành phố đồng hới
+    - tuyên hóa
+    - bắc trà my
+    - đại lộc
+    - điện bàn
+    - đông giang
+    - duy xuyên
+    - hiệp đức
+    - hội an
+    - nam giang
+    - nam trà my
+    - nông sơn
+    - núi thành
+    - phú ninh
+    - phước sơn
+    - quế sơn
+    - tam kỳ
+    - tây giang
+    - thăng bình
+    - tiên phước
+    - ba tơ
+    - bình sơn
+    - đức phổ
+    - lý sơn
+    - minh long
+    - mộ đức
+    - nghĩa hành
+    - quảng ngãi
+    - sơn hà
+    - sơn tây
+    - sơn tịnh
+    - tây trà
+    - trà bồng
+    - tư nghĩa
+    - ba chẽ
+    - bình liêu
+    - cẩm phả
+    - cô tô
+    - đầm hà
+    - đông triều
+    - hạ long
+    - hải hà
+    - hoành bồ
+    - móng cái
+    - quảng yên
+    - tiên yên
+    - uông bí
+    - vân đồn
+    - cam lộ
+    - cồn cỏ
+    - đa krông
+    - đông hà
+    - gio linh
+    - hải lăng
+    - hướng hóa
+    - quảng trị
+    - triệu phong
+    - vĩnh linh
+    - châu thành
+    - cù lao dung
+    - kế sách
+    - long phú
+    - mỹ tú
+    - mỹ xuyên
+    - ngã năm
+    - sóc trăng
+    - thạnh trị
+    - trần đề
+    - vĩnh châu
+    - bắc yên
+    - mai sơn
+    - mộc châu
+    - mường la
+    - phù yên
+    - quỳnh nhai
+    - sơn la
+    - sông mã
+    - sốp cộp
+    - thuận châu
+    - vân hồ
+    - yên châu
+    - bến cầu
+    - châu thành
+    - dương minh châu
+    - gò dầu
+    - hòa thành
+    - tân biên
+    - tân châu
+    - tây ninh
+    - trảng bàng
+    - đông hưng
+    - hưng hà
+    - kiến xương
+    - quỳnh phụ
+    - thái bình
+    - thái thụy
+    - tiền hải
+    - vũ thư
+    - đại từ
+    - định hóa
+    - đồng hỷ
+    - phổ yên
+    - phú bình
+    - phú lương
+    - sông công
+    - thái nguyên
+    - võ nhai
+    - bá thước
+    - bỉm sơn
+    - cẩm thủy
+    - đông sơn
+    - hà trung
+    - hậu lộc
+    - hoằng hóa
+    - lang chánh
+    - mường lát
+    - nga sơn
+    - ngọc lặc
+    - như thanh
+    - như xuân
+    - nông cống
+    - quan hóa
+    - quan sơn
+    - quảng xương
+    - sầm sơn
+    - thạch thành
+    - thanh hóa
+    - thiệu hóa
+    - thọ xuân
+    - thường xuân
+    - tĩnh gia
+    - triệu sơn
+    - vĩnh lộc
+    - yên định
+    - a lưới
+    - huế
+    - hương thủy
+    - hương trà
+    - nam đông
+    - phong điền
+    - phú lộc
+    - phú vang
+    - quảng điền
+    - cái bè
+    - cai lậy
+    - cai lậy (thị xã)
+    - châu thành
+    - chợ gạo
+    - gò công
+    - gò công đông
+    - gò công tây
+    - mỹ tho
+    - tân phú đông
+    - tân phước
+    - càng long
+    - cầu kè
+    - cầu ngang
+    - châu thành
+    - duyên hải
+    - duyên hải (thị xã)
+    - tiểu cần
+    - trà cú
+    - trà vinh
+    - chiêm hóa
+    - hàm yên
+    - lâm bình
+    - nà hang
+    - sơn dương
+    - tuyên quang
+    - yên sơn
+    - bình minh
+    - bình tân
+    - long hồ
+    - mang thít
+    - tam bình
+    - trà ôn
+    - vĩnh long
+    - vũng liêm
+    - bình xuyên
+    - lập thạch
+    - phúc yên
+    - sông lô
+    - tam đảo
+    - tam dương
+    - vĩnh tường
+    - vĩnh yên
+    - yên lạc
+    - lục yên
+    - mù căng chải
+    - nghĩa lộ
+    - trạm tấu
+    - trấn yên
+    - văn chấn
+    - văn yên
+    - yên bái
+    - yên bình
 
 - intent: nlu_fallback
   examples: |
