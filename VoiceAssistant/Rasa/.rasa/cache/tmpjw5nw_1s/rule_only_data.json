@@ -1,0 +1,12 @@
+{
+  "rule_only_slots": [
+    "sub_time",
+    "event",
+    "sub_date",
+    "date",
+    "specific_date",
+    "clarify_district",
+    "time"
+  ],
+  "rule_only_loops": []
+}

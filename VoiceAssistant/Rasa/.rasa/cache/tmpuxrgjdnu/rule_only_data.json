@@ -1,0 +1,11 @@
+{
+  "rule_only_slots": [
+    "specific_date",
+    "time",
+    "clarify_district",
+    "suggested_date",
+    "suggested_time",
+    "event"
+  ],
+  "rule_only_loops": []
+}

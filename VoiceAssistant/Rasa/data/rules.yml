@@ -44,8 +44,152 @@ rules:
       - action: action_listen  # Wait for the user to clarify
       - intent: inform_province  # User clarifies the province
       - action: action_query_weather
-
-  - rule: Handle fallback outside of form
+      - slot_was_set:  # Reset the slots after action execution
+          - clarify_district: null
+          - specific_date: null
+#---------------------------------------------------------------------------------------------------------------------------
+    # Rule to handle the weather query
+  - rule: Create Reminder
     steps:
-      - intent: nlu_fallback
-      - action: action_default_fallback
+      - intent: create_reminder
+      - action: action_create_reminder
+      - slot_was_set:
+          - time: null
+          - date: null
+          - sub_time: null
+          - sub_date: null
+          - event: null
+          - specific_time: null
+          - specific_date: null
+
+   # Rule to handle date clarification when there is ambiguity
+  - rule: Ask for time clarification
+    steps:
+      - action: action_create_reminder
+      - slot_was_set:
+          - time: null
+          - date: null
+          - sub_time: null
+          - sub_date: null
+          - event: true
+          - specific_time: null
+          - specific_date: true
+      - action: action_listen  # Wait for the user to clarify the time
+      - intent: inform_time_and_sub_time  # User provides the missing time
+      - slot_was_set:
+          - time: true  # Time slot should now be set
+      - action: action_create_reminder  # Re-run the action after the user provides the time
+      - slot_was_set:
+          - time: null
+          - date: null
+          - sub_time: null
+          - sub_date: null
+          - event: null  # Reset the slots after completion
+      - action: action_listen  # Continue listening for the next user input
+  
+  # Rule to handle date clarification when there is ambiguity
+  - rule: Ask for time clarification
+    steps:
+      - action: action_create_reminder
+      - slot_was_set:
+          - time: null
+          - date: null
+          - sub_time: null
+          - sub_date: null
+          - event: true
+          - specific_time: null
+          - specific_date: true
+      - action: action_listen  # Wait for the user to clarify the time
+      - intent: inform_time_and_sub_time  # User provides the missing time
+      - slot_was_set:
+          - time: true
+          - sub_time: true  # Time slot should now be set
+      - action: action_create_reminder  # Re-run the action after the user provides the time
+      - slot_was_set:
+          - time: null
+          - date: null
+          - sub_time: null
+          - sub_date: null
+          - event: null  # Reset the slots after completion
+      - action: action_listen  # Continue listening for the next user input
+
+  # Rule to handle date clarification when there is ambiguity
+  - rule: Ask for event clarification
+    steps:
+      - action: action_create_reminder
+      - slot_was_set:
+          - time: null
+          - date: null
+          - sub_time: null
+          - sub_date: null
+          - event: null
+          - specific_time: true
+          - specific_date: true
+      - action: action_listen  # Wait for the user to clarify the time
+      - intent: inform_event  # User provides the missing time
+      - slot_was_set:
+          - event: true
+      - action: action_create_reminder  # Re-run the action after the user provides the time
+      - slot_was_set:
+          - time: null
+          - date: null
+          - sub_time: null
+          - sub_date: null
+          - event: null  # Reset the slots after completion
+      - action: action_listen  # Continue listening for the next user input
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+  - rule: Create Timer
+    steps:
+      - intent: create_timer
+      - action: action_create_timer
+      - slot_was_set:
+          - time: null
+          - date: null
+          - sub_time: null
+          - sub_date: null
+          - event: null
+
+   # Rule to handle date clarification when there is ambiguity
+  - rule: Ask for time clarification
+    steps:
+      - action: action_create_timer
+      - slot_was_set:
+          - time: null
+          - event: true
+          - date: null
+          - sub_time: null
+          - sub_date: null
+      - action: action_listen  # Wait for the user to clarify the time
+      - intent: inform_time  # User provides the missing time
+      - slot_was_set:
+          - time: true  # Time slot should now be set
+      - action: action_create_timer  # Re-run the action after the user provides the time
+      - slot_was_set:
+          - time: null
+          - event: null  # Reset the slots after completion
+
+  - rule: Ask for event clarification
+    steps:
+      - action: action_create_timer
+      - slot_was_set:
+          - time: true
+          - event: null
+          - date: null
+          - sub_time: null
+          - sub_date: null
+      - action: action_listen  # Wait for the user to clarify the time
+      - intent: inform_event  # User provides the missing time
+      - slot_was_set:
+          - event: true  # Time slot should now be set
+      - action: action_create_timer  # Re-run the action after the user provides the time
+      - slot_was_set:
+          - time: null
+          - event: null  # Reset the slots after completion
+      
+
+  - rule: Fallback
+    steps:
+    - intent: nlu_fallback
+    - action: utter_ask_rephrase

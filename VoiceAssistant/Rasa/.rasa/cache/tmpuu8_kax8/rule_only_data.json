@@ -1,0 +1,9 @@
+{
+  "rule_only_slots": [
+    "specific_date",
+    "clarify_district"
+  ],
+  "rule_only_loops": [
+    "action_two_stage_fallback"
+  ]
+}

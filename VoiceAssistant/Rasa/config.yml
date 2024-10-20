@@ -28,10 +28,11 @@ pipeline:
     BILOU_flag: True 
   - name: EntitySynonymMapper
   - name: ResponseSelector
-    epochs: 100
+    epochs: 200
   - name: FallbackClassifier
-    threshold: 0.4
+    threshold: 0.5
     ambiguity_threshold: 0.1
+    epochs: 150
 # # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
 # # If you'd like to customize it, uncomment and adjust the pipeline.
 # # See https://rasa.com/docs/rasa/tuning-your-model for more information.
@@ -59,16 +60,6 @@ pipeline:
 # Policies
 policies:
   - name: RulePolicy
-    core_fallback_action_name: "action_default_fallback"
-    core_fallback_threshold: 0.4
-    enable_fallback_prediction: True
-    # Define rules for fallback
-    rules:
-      - rule: Fallback rule
-        steps:
-          - intent: nlu_fallback
-          - action: action_default_fallback
-
   - name: MemoizationPolicy
   - name: TEDPolicy
     max_history: 5

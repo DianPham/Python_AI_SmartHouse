@@ -6,13 +6,33 @@ nlu:
     - bật đèn
     - mở đèn phòng khách
     - làm ơn bật đèn
-    - hãy bật đèn cho tôi
+    - hãy bật đèn cho anh
     - bật đèn lên
     - mở đèn ngủ đi
     - vui lòng bật đèn
     - bạn có thể bật đèn không
     - bật đèn phòng tắm
     - bật đèn bếp
+    - bật đèn nhà bếp
+    - làm ơn mở đèn trong phòng
+    - bật đèn nhà vệ sinh
+    - mở đèn sân thượng
+    - bật đèn trong phòng ăn
+    - mở đèn phòng làm việc
+    - bật đèn ngoài sân
+    - bật tất cả đèn lên
+    - mở đèn ở ban công
+    - bạn có thể mở đèn phòng khách không?
+    - làm ơn bật đèn phòng làm việc
+    - bật đèn trong phòng học
+    - mở đèn phòng ăn đi
+    - bật đèn hành lang
+    - bật đèn ngoài trời
+    - làm ơn bật đèn chỗ này
+    - bật đèn bên ngoài
+    - mở đèn phòng tắm giúp anh
+    - bật đèn khu vực nhà xe
+    - mở đèn phòng khách lên
 
 - intent: light_deactivate
   examples: |
@@ -26,20 +46,60 @@ nlu:
     - tắt đèn phòng tắm
     - tắt đèn ngoài hành lang
     - tắt đèn phòng khách
+    - tắt đèn nhà bếp
+    - làm ơn tắt đèn trong phòng
+    - tắt đèn nhà vệ sinh
+    - tắt đèn ngoài sân
+    - tắt đèn trong phòng ăn
+    - tắt đèn phòng làm việc
+    - tắt đèn ở ban công
+    - bạn có thể tắt hết đèn trong nhà không
+    - làm ơn tắt đèn phòng khách
+    - tắt đèn hành lang đi
+    - tắt đèn ngoài trời
+    - tắt đèn trong phòng học
+    - làm ơn tắt đèn chỗ này
+    - tắt đèn bên ngoài
+    - tắt đèn phòng tắm giúp anh
+    - bạn có thể tắt đèn ở phòng ngủ không
+    - tắt đèn khu vực nhà xe
+    - tắt đèn ở phòng khách đi
+    - hãy tắt đèn sân thượng
+    - vui lòng tắt đèn phòng ăn
 
 - intent: turn_on_music
   examples: |
     - mở nhạc đi
     - bật nhạc ngay
-    - phát nhạc cho tôi nghe
-    - cho tôi nghe nhạc
+    - phát nhạc cho anh nghe
+    - cho anh nghe nhạc
     - bạn có thể bật nhạc lên không?
     - phát một bài hát thật hay
     - mở nhạc êm dịu đi
     - làm ơn phát nhạc
-    - tôi muốn nghe chút nhạc
+    - anh muốn nghe chút nhạc
     - bật nhạc
     - mở nhạc
+    - bật nhạc nhẹ nhàng đi
+    - phát nhạc sôi động cho anh
+    - mở nhạc nào hay đi
+    - làm ơn bật nhạc đi
+    - anh muốn nghe nhạc
+    - phát một bài hát vui vẻ
+    - mở nhạc thư giãn
+    - mở nhạc ngay bây giờ
+    - bật nhạc cho anh nghe
+    - phát nhạc vào buổi sáng
+    - mở một bài hát bất kỳ
+    - bật nhạc nhẹ đi
+    - cho anh nghe chút nhạc
+    - phát nhạc lên đi
+    - bật nhạc lớn hơn chút
+    - bạn có thể phát nhạc không?
+    - mở nhạc khi anh tập thể dục
+    - bật nhạc trong phòng khách
+    - phát nhạc vào buổi chiều
+    - mở nhạc thật hay
 
 - intent: provide_song
   examples: |
@@ -48,83 +108,204 @@ nlu:
     - bật [dự báo thời tiết hôm nay mưa](song) đi?
     - bạn có thể phát bài [nếu lúc đó](song) được không?
     - hãy bật ngay bài [sau lời từ khước](song)
-    - tôi muốn nghe bài [có em chờ](song)
+    - anh muốn nghe bài [có em chờ](song)
     - phát nhạc [đừng yêu nữa, em mệt rồi](song)
     - phát bài [tháng tư là lời nói dối của em](song)
     - mở [đúng người đúng thời điểm](song)
     - bật ngay [ngày chưa giông bão](song)
+    - mở bài [hơn cả yêu](song)
+    - phát bài [bông hoa đẹp nhất](song)
+    - bật bài [anh cứ đi đi](song) giúp anh
+    - bạn có thể mở bài [buồn làm chi em ơi](song) được không?
+    - phát ngay bài [một bước yêu vạn dặm đau](song)
+    - cho anh nghe bài [chạy ngay đi](song)
+    - mở bài [người lạ ơi](song) đi
+    - bật bài hát [có chắc yêu là đây](song) đi
+    - phát nhạc [em không sai, chúng ta sai](song) đi
+    - anh muốn nghe bài [yêu là tha thu](song)
+    - mở bài [em gái mưa](song) nhé
+    - phát bài [đi đu đưa đi](song) cho anh nghe
+    - bật bài [lạc trôi](song) ngay đi
+    - anh muốn nghe bài [nơi này có anh](song)
+    - phát bài [sóng gió](song) đi nào
+    - bật bài hát [từng yêu](song) ngay đi
+    - cho anh nghe bài [người hãy quên em đi](song)
+    - mở bài [tháng năm](song) nhé
+    - phát bài [bùa yêu](song)
+    - bật ngay bài [cả một trời thương nhớ](song)
 
 - intent: provide_artist
   examples: |
     - phát nhạc của [phan mạnh quỳnh](artist) đi
-    - tôi muốn nghe nhạc của [phúc du](artist)
+    - anh muốn nghe nhạc của [phúc du](artist)
     - mở các bài của [vũ](artist)
     - phát nhạc của [thịnh suy](artist)
-    - cho tôi nghe nhạc của [sơn tùng](artist)
+    - cho anh nghe nhạc của [sơn tùng](artist)
     - bật nhạc của ca sĩ [đen vâu](artist)
-    - tôi muốn nghe nhạc của [bích phương](artist)
+    - anh muốn nghe nhạc của [bích phương](artist)
     - phát bài của [hà anh tuấn](artist) đi
     - bật những bài của [min](artist)
     - phát nhạc của [ngọt](artist)
+    - mở nhạc của [hoàng dũng](artist) đi
+    - phát bài hát của [mỹ tâm](artist)
+    - anh muốn nghe nhạc của [erik](artist)
+    - phát nhạc của [soobin hoàng sơn](artist)
+    - mở các bài của [đức phúc](artist)
+    - bật nhạc của [trúc nhân](artist) nhé
+    - phát nhạc của [hoàng thuỳ linh](artist) cho anh nghe
+    - bật nhạc của [hồ ngọc hà](artist) đi
+    - anh muốn nghe nhạc của [isaac](artist)
+    - phát các bài của [chi dân](artist) ngay đi
+    - mở nhạc của [noo phước thịnh](artist)
+    - phát các bài hát của [tóc tiên](artist)
+    - bật nhạc của [văn mai hương](artist)
+    - cho anh nghe nhạc của [hương tràm](artist)
+    - phát nhạc của [tiên cookie](artist)
+    - mở các bài của [justaTee](artist) đi
+    - bật nhạc của [karik](artist) ngay
+    - phát nhạc của [trịnh thăng bình](artist)
+    - bật bài hát của [ngọc lan](artist) đi
+    - cho anh nghe nhạc của [hà hồ](artist)
 
 - intent: provide_song_with_artist
   examples: |
     - phát bài [có chàng trai viết lên cây](song) của [phan mạnh quỳnh](artist)
-    - tôi muốn nghe bài [đom đóm](song) của [jack](artist)
+    - anh muốn nghe bài [đom đóm](song) của [jack](artist)
     - mở bài [chạy ngay đi](song) của [sơn tùng](artist)
     - bật bài [tháng tư là lời nói dối của em](song) của [hà anh tuấn](artist)
     - phát bài [anh đếch cần gì nhiều ngoài em](song) của [đen vâu](artist)
     - bật bài [một mình có buồn không](song) của [thịnh suy](artist)
     - phát bài [người ta nói](song) của [ngọt](artist)
     - mở bài [mưa trên cuộc tình](song) của [sơn tùng](artist)
-    - tôi muốn nghe bài [có em chờ](song) của [min](artist)
+    - anh muốn nghe bài [có em chờ](song) của [min](artist)
     - bật bài [từ đó](song) của [phan mạnh quỳnh](artist)
     - phát bài [như ngày hôm qua](song) của [sơn tùng](artist)
-    - tôi muốn nghe bài [từ đó](song) của [phan mạnh quỳnh](artist)
+    - anh muốn nghe bài [từ đó](song) của [phan mạnh quỳnh](artist)
     - bật bài [một mình có buồn không](song) của [thịnh suy](artist)
     - nghe bài [người ta nói](song) của [ngọt](artist)
     - mở bài [em của ngày hôm qua](song) của [sơn tùng](artist)
     - phát nhạc [ánh nắng của anh](song) của [đức phúc](artist)
     - chơi bài [tình yêu màu nắng](song) của [đoàn thùy trang](artist)
     - mở bài hát [người ấy](song) của [trịnh thăng bình](artist)
-    - tôi muốn nghe bài [sau tất cả](song) của [erik](artist)
+    - anh muốn nghe bài [sau tất cả](song) của [erik](artist)
 
 
 - intent: provide_genre
   examples: |
     - mở vài bài nhạc [rock](genre) đi
-    - tôi muốn nghe nhạc [jazz](genre) thật hay
+    - anh muốn nghe nhạc [jazz](genre) thật hay
     - phát những bài nhạc [pop](genre) hay nhất
     - bật nhạc [rap](genre) thật sôi động
     - mở một vài bản nhạc [hiphop](genre)
     - phát nhạc [ballad](genre) nhẹ nhàng
     - bật mấy bài nhạc [indie](genre)
     - mở các bài hát thuộc thể loại [classical](genre)
-    - tôi muốn nghe nhạc [electronic](genre)
+    - anh muốn nghe nhạc [electronic](genre)
     - phát vài bài nhạc [funk](genre)
+    - mở nhạc [country](genre) đi
+    - phát vài bài nhạc [lo-fi](genre) cho anh nghe
+    - anh muốn nghe nhạc [reggae](genre)
+    - bật nhạc [acoustic](genre) nhẹ nhàng
+    - phát nhạc [blues](genre) được không?
+    - anh muốn nghe một vài bản nhạc [dance](genre)
+    - mở vài bài thuộc thể loại [metal](genre)
+    - phát nhạc [punk](genre) đi
+    - bật những bài nhạc [soul](genre) hay
+    - phát nhạc [r&b](genre) sôi động
+    - mở nhạc [trance](genre) để thư giãn
+    - phát nhạc [synthwave](genre) đi
+    - bật vài bài nhạc [dubstep](genre)
+    - anh muốn nghe nhạc [disco](genre)
+    - mở mấy bài thuộc thể loại [folk](genre)
+    - phát nhạc [alternative](genre) đi
+    - bật vài bài thuộc thể loại [k-pop](genre)
+    - mở nhạc [v-pop](genre) đi
+    - phát một vài bản nhạc [ambient](genre)
+    - anh muốn nghe nhạc [chillout](genre)
 
 - intent: ask_for_weather
   examples: |
     - thời tiết [ngày 5 tháng 6](date) thế nào
-    - [ngày mai](date) có nắng không
-    - dự báo thời tiết [ngày 10 tháng 12](date) ở [hồ chí minh](location) là gì
-    - nhiệt độ [hà nội](location) [ngày hôm qua](date) bao nhiêu
-    - thời tiết [chiều nay](date) có lạnh không
-    - dự báo thời tiết [ngày kia](date) thế nào
-    - xem thời tiết ở [đà nẵng](location) [ngày 20 tháng 7](date)
-    - thời tiết [tuần sau](date) tại [huế](location) có mưa không
-    - trời có mưa [ngày 25 tháng 12](date) ở [cần thơ](location) không
-    - dự báo thời tiết [ngày 30 tháng 4](date) thế nào
-    - xem dự báo thời tiết [hôm nay](date) tại [vũng tàu](location)
-    - trời có lạnh [ngày kia](date) không
-    - thời tiết [sài gòn](location) [ngày 1 tháng 1](date) như thế nào
-    - có mưa [ngày 15 tháng 8](date) ở [nha trang](location) không
-    - dự báo thời tiết [tuần này](date) tại [quy nhơn](location) là gì
-    - trời có nắng ở [biên hòa](location) [ngày 2 tháng 3](date) không
-    - nhiệt độ [thành phố hồ chí minh](location) [ngày 25 tháng 9](date) bao nhiêu
-    - xem dự báo thời tiết [bây giờ](date) ở [đồng nai](location)
-    - thời tiết ở [phú quốc](location) [ngày 8 tháng 8](date) có đẹp không
-    - dự báo thời tiết [ngày 15 tháng 10](date) ở [hải phòng](location)
+    - [hiện tại]](date) có nắng không
+    - nhiệt độ [sài gòn](location) thế nào
+    - tình hình thời tiết [tuần sau](sub_date) ra sao
+    - có mưa vào [ngày kia](date) không
+    - [hà nội](location) có mưa không
+    - trời có nắng [chiều](sub_time) không
+    - thời tiết [sáng](sub_time) thế nào
+    - nhiệt độ [ngày 15 tháng 8](date) ra sao
+    - xem thời tiết [cuối tuần](sub_date) như thế nào
+    - trời có mưa không [sáng](sub_time)
+    - tình hình thời tiết [đà nẵng](location) thế nào
+    - thời tiết [ngày mai](date) ra sao
+    - dự báo thời tiết [hồ chí minh](location) thế nào
+    - có mưa [lúc này](date) không
+    - trời có lạnh vào [ngày mai](date) không
+    - thời tiết ở [tân phú](location) thế nào
+    - thời tiết ở [ninh hải](location) ra sao
+    - nhiệt độ [chiều](sub_time) thế nào
+    - tình hình thời tiết [ninh kiều](location) thế nào
+
+    - thời tiết [hiện tại](date) tại [hà nội](location) ra sao
+    - [ngày mai](date) ở [sài gòn](location) có mưa không
+    - nhiệt độ [ngày mai](date) tại [đà nẵng](location) thế nào
+    - tình hình thời tiết [cuối tuần](sub_date) ở [nha trang](location)
+    - dự báo thời tiết [ngày 10 tháng 12](date) ở [vũng tàu](location)
+    - thời tiết [chiều](sub_time) [nay](date) tại [hồ chí minh](location) thế nào
+    - có nắng [ngày 15 tháng 10](date) tại [sài gòn](location) không
+    - dự báo thời tiết [sáng](sub_time) [nay](date) tại [huế](location)
+    - trời có mưa [bây giờ](date) tại [hà nội](location)
+    - xem thời tiết [cuối tháng](sub_date) tại [quảng ngãi](location)
+    - thời tiết [sáng](sub_time) [mai](date) tại [nha trang](location)
+    - dự báo thời tiết [ngày mai](date) tại [thủ đức](location)
+    - [ngày kia](date) ở [sapa](location) có lạnh không
+    - xem thời tiết [đầu tuần](sub_date) tại [quy nhơn](location)
+    - trời có lạnh vào [ngày mai](date) tại [huế](location)
+    - dự báo thời tiết [tân phú](location) vào [mai](date)
+    - [ninh kiều](location) [hôm nay](date) có mưa không
+    - thời tiết [cuối tuần](sub_date) tại [vũng tàu](location)
+    - xem thời tiết [chiều](sub_time) [ngày kia](date) tại [sài gòn](location)
+    - thời tiết [hà nội](location) [sáng](sub_time) ra sao
+    - dự báo thời tiết [ngày mai](date) tại [huế](location) vào [sáng](sub_time)
+    - thời tiết [sáng](sub_time) [mai](date) tại [hà nội](location) thế nào
+    - có mưa vào [lúc này](date) ở [hồ chí minh](location) không
+    - xem thời tiết [chiều](sub_time) [cuối tuần](sub_date) tại [sài gòn](location)
+    - nhiệt độ [sáng](sub_time) [hôm nay](date) tại [vũng tàu](location)  bao nhiêu
+    - thời tiết [chiều](sub_time) [ngày mai](date) tại [nha trang](location)
+    - trời có mưa vào [ngày 5 tháng 11](date) ở [quảng ngãi](location)
+    - dự báo thời tiết [sáng](sub_time) [ngày 6 tháng 10](date) tại [huế](location)
+    - thời tiết [ngày mai](date) lúc [chiều](sub_time) tại [quy nhơn](location) 
+    - nhiệt độ [hiện tại](date) tại [vũng tàu](location) ra sao
+    - tình hình thời tiết [sáng](sub_time) [nay](date) tại [huế](location)
+    - xem dự báo thời tiết [lúc này](date) tại [sài gòn](location)
+    - có nắng vào [ngày mai](date) [chiều](sub_time) tại [huế](location)
+    - xem thời tiết [đà nẵng](location) vào [chiều](sub_time) [mai](date)
+    - tình hình thời tiết [chiều](sub_time) [mai](date) tại [tây ninh](location)
+    - nhiệt độ [sáng](sub_time) tại [đà nẵng](location) vào [ngày 8 tháng 10](date)
+    - thời tiết [cuối tuần](sub_date) vào [sáng](sub_time) tại [huế](location)
+    - xem dự báo thời tiết [chiều](sub_time) [tuần sau](sub_date) tại [nha trang](location)
+    - dự báo thời tiết [ngày 20 tháng 12](date) tại [vũng tàu](location) vào [sáng](sub_time)
+    - thời tiết [sáng](sub_time) tại [huế](location) [ngày mai](date) thế nào
+    - thời tiết tại [sài gòn](location) vào [sáng](sub_time) [cuối tuần](sub_date)
+    - có nắng vào [chiều](sub_time) [ngày 5 tháng 10](date) tại [huế](location) không
+    - tình hình thời tiết [sáng](sub_time) [cuối tuần](sub_date) tại [nha trang](location)
+    - dự báo thời tiết [ngày mai](date) vào [sáng](sub_time) tại [hồ chí minh](location)
+    - xem thời tiết [cuối tuần](sub_date) vào [chiều](sub_time) tại [vũng tàu](location)
+    - trời có mưa vào [sáng](sub_time) [mai](date) tại [quy nhơn](location) 
+    - nhiệt độ [hôm nay](date) tại [huế](location) [chiều](sub_time)
+    - xem dự báo thời tiết [ngày mai](date) tại [hà nội](location) vào [sáng](sub_time)
+    - thời tiết [bây giờ](date) tại [nha trang](location)
+    - trời có nắng vào [ngày mai](date) tại [huế](location) [sáng](sub_time)
+    - dự báo thời tiết vào [sáng](sub_time) [mai](date) tại [sài gòn](location)
+    - tình hình thời tiết [ngày hôm nay](date) tại [quy nhơn](location) vào [chiều](sub_time)
+    - có mưa vào [chiều](sub_time) [ngày 15 tháng 10](date) tại [hồ chí minh](location)
+    - thời tiết [ngày kia](date) tại [huế](location)
+    - xem dự báo thời tiết vào [chiều](sub_time) [cuối tuần](sub_date) tại [vũng tàu](location)
+    - nhiệt độ [ngày 8 tháng 10](date) tại [đà nẵng](location) [sáng](sub_time)
+    - thời tiết [cuối tuần](sub_date) tại [huế](location) vào [sáng](sub_time)
+    - trời có lạnh vào [sáng](sub_time) [ngày hôm nay](date) tại [quy nhơn](location) 
+    - dự báo thời tiết [chiều](sub_time) [ngày 15 tháng 12](date) tại [vũng tàu](location) 
+    - thời tiết [chiều](sub_time) [ngày mai](date) tại [huế](location) 
     - thời tiết thế nào
     - thời tiết ra sao
     - thời tiết đang như thế nào
@@ -136,28 +317,7 @@ nlu:
     - tình hình thời tiết thế nào
     - trời có nắng không
     - độ ẩm ngoài trời như thế nào
-    - thời tiết [ngày mai](date) thế nào?
-    - thời tiết [hiện tại](date) ra sao?
-    - thời tiết [tuần sau](date) có mưa không?
-    - [bây giờ](date) có đang mưa không?
-    - dự báo thời tiết [ngày kia](date) là gì?
-    - tình hình thời tiết [hôm nay](date) ra sao?
-    - thời tiết vào [ngày 15 tháng 10](date) thế nào?
-    - có mưa [ngày 20 tháng 10](date) không?
-    - dự báo thời tiết [cuối tuần](date) là gì?
-    - trời có nắng vào [ngày 5 tháng 11](date) không?
-    - nhiệt độ [ngày mai](date) là bao nhiêu?
-    - [ngày mai](date) trời có mưa không?
-    - thời tiết ở [hà nội](location) thế nào?
-    - dự báo thời tiết ở [sài gòn](location) là gì?
-    - ở [đà nẵng](location) có mưa không?
-    - trời có nắng ở [hải phòng](location) không?
-    - thời tiết ở [nha trang](location) có đẹp không?
-    - ở [huế](location) có mưa không?
-    - nhiệt độ ở [sapa](location) thế nào?
-    - thời tiết [hồ chí minh](location) ra sao?
-    - dự báo thời tiết tại [vũng tàu](location) là gì?
-    - ở [cần thơ](location) trời thế nào?
+    
 
 - intent: inform_province
   examples: |
@@ -226,14 +386,41 @@ nlu:
     - [vĩnh phúc](location)
     - [yên bái](location)
 
-- intent: end
+
+- intent: affirm
   examples: |
-    - vậy thôi
-    - ok
-    - ô kê
+    - vâng
+    - đúng vậy
+    - chính xác
+    - đúng rồi
+    - ừ
+    - ừ đúng
+    - chắc chắn
+    - chắc chắn rồi
+    - tất nhiên
+    - dĩ nhiên
+    - đúng thế
+    - chắc chắn là như vậy
+    - chuẩn
+    - đồng ý
+    - tất nhiên rồi
+    - chính xác là như vậy
     - được
-    - ừm
-    - rồi rồi
+    - ok
+    - oke
+    - tuyệt
+    - ừ đúng rồi
+    - ừ, vậy đi
+    - dạ
+    - đúng ạ
+    - vâng, đúng thế
+    - ừ, đúng vậy
+    - chắc chắn luôn
+    - chuẩn rồi
+    - phải rồi
+    - chính xác luôn
+    - vâng, được
+    - đồng ý luôn
 
 - regex: song
   examples: |
@@ -247,796 +434,1049 @@ nlu:
   examples: |
     - .*(nhạc) [A-Za-z\s]+
 
+- regex: sub_date
+  examples: |
+    - \b[cuối tuần]
+    - \b[đầu tuần]
+    - \b[cuối tháng]
+    - \b[đầu tháng]
+    - \b[tuần sau]
+
+- regex: sub_time
+  examples: |
+    - \b[sáng]
+    - \b[trưa]
+    - \b[chiều]
+    - \b[tối]
+    - \b[khuya]
+
+- regex: time
+  examples: |
+    - \b[[0-9]{1,2} giờ]
+    - \b[[0-9]{1,2} giờ [0-9]{1,2}]
+    - \b[[0-9]{1,2} giờ [0-9]{1,2} phút]
+    - \b[0-9]{1,2} phút]
+    - \b[[0-9]{1,2} phút [0-9]{1,2} giây]
+    - \b[[0-9]{1,2} phút [0-9]{1,2}]
+    - \b[0-9]{1,2} giây]
+
 - regex: date
   examples: |
-    - hôm nay
-    - ngày mai
-    - ngày kia
-    - ngày [0-9]{1,2} tháng [0-9]{1,2}
-    - hiện tại
-    - cuối tuần
-    - ngày mốt
-    - bây giờ
+    - \b[ngày hôm nay]
+    - \b[hôm nay]
+    - \b[nay]
+    - \b[mai]
+    - \b[ngày mai]
+    - \b[ngày kia]
+    - \b[ngày [0-9]{1,2} tháng [0-9]{1,2}]
+    - \b[hiện tại]
+    - \b[ngày mốt]
+    - \b[bây giờ]
 
 - lookup: location
   examples: |
-    - an giang
-    - bà rịa - vũng tàu
-    - bắc giang
-    - bắc kạn
-    - bạc liêu
-    - bắc ninh
-    - bến tre
-    - bình định
-    - bình dương
-    - bình phước
-    - bình thuận
-    - cà mau
-    - cần thơ
-    - cao bằng
-    - đà nẵng
-    - đắk lắk
-    - đắk nông
-    - điện biên
-    - đồng nai
-    - đồng tháp
-    - gia lai
-    - hà giang
-    - hà nam
-    - hà nội
-    - hà tĩnh
-    - hải dương
-    - hải phòng
-    - hậu giang
-    - hồ chí minh
-    - hoà bình
-    - hưng yên
-    - khánh hòa
-    - kiên giang
-    - kon tum
-    - lai châu
-    - lâm đồng
-    - lạng sơn
-    - lào cai
-    - long an
-    - nam định
-    - nghệ an
-    - ninh bình
-    - ninh thuận
-    - phú thọ
-    - phú yên
-    - quảng bình
-    - quảng nam
-    - quảng ngãi
-    - quảng ninh
-    - quảng trị
-    - sóc trăng
-    - sơn la
-    - tây ninh
-    - thái bình
-    - thái nguyên
-    - thanh hóa
-    - thừa thiên huế
-    - tiền giang
-    - trà vinh
-    - tuyên quang
-    - vĩnh long
-    - vĩnh phúc
-    - yên bái
-    - an phú
-    - châu đốc
-    - châu phú
-    - châu thành
-    - chợ mới
-    - long xuyên
-    - phú tân
-    - tân châu
-    - thoại sơn
-    - tịnh biên
-    - tri tôn
-    - bà rịa
-    - châu đức
-    - đất đỏ
-    - long điền
-    - tân thành
-    - vũng tàu
-    - xuyên mộc
-    - bắc giang
-    - hiệp hòa
-    - lạng giang
-    - lục nam
-    - lục ngạn
-    - sơn động
-    - tân yên
-    - việt yên
-    - yên dũng
-    - yên thế
-    - ba bể
-    - bạch thông
-    - chợ đồn
-    - chợ mới
-    - na rì
-    - ngân sơn
-    - pác nặm
-    - thành phố bắc kạn
-    - bạc liêu
-    - đông hải
-    - giá rai
-    - hoà bình
-    - hồng dân
-    - phước long
-    - vĩnh lợi
-    - bắc ninh
-    - gia bình
-    - lương tài
-    - quế võ
-    - thuận thành
-    - tiên du
-    - từ sơn
-    - yên phong
-    - ba tri
-    - bến tre
-    - bình đại
-    - châu thành
-    - chợ lách
-    - giồng trôm
-    - mỏ cày bắc
-    - mỏ cày nam
-    - thạnh phú
-    - an lão
-    - an nhơn
-    - hoài ân
-    - hoài nhơn
-    - phù cát
-    - phù mỹ
-    - qui nhơn
-    - tây sơn
-    - tuy phước
-    - vân canh
-    - vĩnh thạnh
-    - bắc tân uyên
-    - bàu bàng
-    - bến cát
-    - dầu tiếng
-    - dĩ an
-    - phú giáo
-    - tân uyên
-    - thủ dầu một
-    - thuận an
-    - bình long
-    - bù đăng
-    - bù đốp
-    - bù gia mập
-    - chơn thành
-    - đồng phú
-    - đồng xoài
-    - hớn quản
-    - lộc ninh
-    - phú riềng
-    - phước long
-    - bắc bình
-    - đức linh
-    - hàm tân
-    - hàm thuận bắc
-    - hàm thuận nam
-    - la gi
-    - phan thiết
-    - phú quí
-    - tánh linh
-    - tuy phong
-    - cà mau
-    - cái nước
-    - đầm dơi
-    - năm căn
-    - ngọc hiển
-    - phú tân
-    - thới bình
-    - trần văn thời
-    - u minh
-    - bình thuỷ
-    - cái răng
-    - cờ đỏ
-    - ninh kiều
-    - ô môn
-    - phong điền
-    - thới lai
-    - thốt nốt
-    - vĩnh thạnh
-    - bảo lạc
-    - bảo lâm
-    - cao bằng
-    - hạ lang
-    - hà quảng
-    - hoà an
-    - nguyên bình
-    - phục hoà
-    - quảng uyên
-    - thạch an
-    - thông nông
-    - trà lĩnh
-    - trùng khánh
-    - cẩm lệ
-    - hải châu
-    - hòa vang
-    - liên chiểu
-    - ngũ hành sơn
-    - sơn trà
-    - thanh khê
-    - buôn đôn
-    - buôn ma thuột
-    - cư kuin
-    - cư m'gar
-    - ea h'leo
-    - ea kar
-    - ea súp
-    - krông a na
-    - krông bông
-    - krông búk
-    - krông năng
-    - krông pắc
-    - lắk
-    - m'đrắk
-    - thị xã buôn hồ
-    - cư jút
-    - đăk glong
-    - đắk mil
-    - đắk r'lấp
-    - đắk song
-    - gia nghĩa
-    - krông nô
-    - tuy đức
-    - điện biên
-    - điện biên đông
-    - điện biên phủ
-    - mường ảng
-    - mường chà
-    - mường nhé
-    - nậm pồ
-    - thị xã mường lay
-    - tủa chùa
-    - tuần giáo
-    - biên hòa
-    - cẩm mỹ
-    - định quán
-    - long khánh
-    - long thành
-    - nhơn trạch
-    - tân phú
-    - thống nhất
-    - trảng bom
-    - vĩnh cửu
-    - xuân lộc
-    - cao lãnh
-    - cao lãnh (thành phố)
-    - châu thành
-    - hồng ngự
-    - hồng ngự (thị xã)
-    - lai vung
-    - lấp vò
-    - sa đéc
-    - tam nông
-    - tân hồng
-    - thanh bình
-    - tháp mười
-    - an khê
-    - ayun pa
-    - chư păh
-    - chư prông
-    - chư pưh
-    - chư sê
-    - đăk đoa
-    - đăk pơ
-    - đức cơ
-    - ia grai
-    - ia pa
-    - kbang
-    - kông chro
-    - krông pa
-    - mang yang
-    - phú thiện
-    - pleiku
-    - bắc mê
-    - bắc quang
-    - đồng văn
-    - hà giang
-    - hoàng su phì
-    - mèo vạc
-    - quản bạ
-    - quang bình
-    - vị xuyên
-    - xín mần
-    - yên minh
-    - bình lục
-    - duy tiên
-    - kim bảng
+    - sài gòn
+    - thủ thừa
     - lý nhân
-    - phủ lý
-    - thanh liêm
+    - phú thiện
+    - lạng sơn
+    - tủa chùa
+    - tiên phước
+    - hàm thuận bắc
+    - hải hà
+    - hà trung
+    - tiên lãng
+    - ngọc lặc
+    - bình thuận
+    - sốp cộp
+    - thanh khê
+    - m'đrắk
+    - mai sơn
+    - ninh bình
+    - phú riềng
+    - yên lập
+    - kông chro
+    - sa thầy
+    - phù cát
+    - thái hoà
+    - đồ sơn
+    - thới bình
+    - hạ hoà
+    - tuyên hóa
+    - nam sách
+    - ngọc hiển
+    - điện biên phủ
+    - đà nẵng
+    - lộc hà
+    - thái bình
+    - phú hoà
+    - nghĩa đàn
+    - duyên hải
+    - thoại sơn
+    - định quán
+    - quan hóa
+    - mộc hóa
+    - phú lương
+    - hải hậu
+    - tu mơ rông
+    - vĩnh cửu
+    - di linh
+    - trần văn thời
+    - tam đảo
+    - trần đề
+    - lâm hà
+    - văn bàn
+    - phước long
+    - đắk glei
+    - trấn yên
+    - hàm tân
+    - thông nông
+    - vĩnh tường
+    - quảng trị
+    - pleiku
+    - yên lạc
+    - sóc sơn
+    - tây giang
+    - trà vinh
+    - đa krông
+    - tứ kỳ
+    - bắc sơn
+    - long an
+    - thanh thuỷ
+    - ninh phước
+    - kim động
+    - thị xã mường lay
+    - yên mỹ
+    - rạch giá
+    - châu phú
+    - điện bàn
+    - na rì
+    - đầm dơi
+    - đức hòa
+    - yên minh
+    - tiền hải
+    - mộc châu
+    - sơn trà
+    - bình gia
+    - kim sơn
+    - thanh chương
+    - yên thành
+    - tân hưng
+    - trùng khánh
+    - cầu kè
+    - liên chiểu
+    - cư m'gar
+    - yên sơn
+    - ngọc hồi
+    - khánh hòa
+    - mang yang
+    - yên bái
+    - quận 12
+    - vĩnh thạnh
+    - thường tín
+    - phúc thọ
+    - khánh sơn
+    - tây hoà
+    - dương minh châu
+    - bình phước
+    - vị thuỷ
+    - hương trà
+    - hậu giang
+    - quận 7
+    - đồng phú
+    - hòn đất
+    - si ma cai
+    - thăng bình
+    - kbang
+    - chư pưh
+    - cẩm lệ
+    - hương sơn
+    - kon rẫy
+    - tĩnh gia
+    - mỹ tú
+    - đà bắc
+    - bến cầu
+    - lâm thao
+    - cầu ngang
+    - lập thạch
+    - cần giuộc
+    - tam bình
+    - bến lức
+    - an dương
+    - ninh sơn
+    - chư păh
+    - long xuyên
+    - chư prông
+    - mai châu
+    - châu thành
+    - nghệ an
+    - móng cái
+    - nam trà my
+    - đình lập
+    - hậu lộc
+    - vĩnh lợi
+    - phú giáo
+    - long phú
+    - nam giang
+    - cao lộc
+    - hướng hóa
+    - gia bình
+    - quỳ châu
+    - đông sơn
+    - cư jút
+    - thốt nốt
+    - quận 3
+    - văn yên
+    - đăk glong
+    - bù gia mập
+    - ia pa
+    - kinh môn
+    - hưng yên
+    - hòa vang
+    - cần thơ
+    - sơn hà
+    - võ nhai
+    - tam điệp
+    - bình định
+    - hà tiên
+    - yên phong
+    - đức trọng
+    - chợ mới
+    - nghĩa hưng
+    - thới lai
+    - hồng lĩnh
+    - hồ chí minh
+    - định hóa
+    - dầu tiếng
+    - hà nội
+    - vũ quang
+    - hiệp hòa
+    - bắc giang
+    - mỹ lộc
     - ba đình
+    - cư kuin
+    - minh long
+    - đắk lắk
+    - phù mỹ
+    - la gi
+    - đồng nai
+    - hàm yên
+    - hàm thuận nam
+    - triệu phong
+    - kiến thuỵ
+    - thuỷ nguyên
+    - quốc oai
+    - thuận an
+    - bắc tân uyên
+    - quận 9
+    - bình long
+    - mỹ hào
+    - cẩm phả
+    - thuận bắc
+    - phụng hiệp
+    - an nhơn
+    - ninh thuận
+    - phúc yên
+    - bình minh
+    - lạng giang
+    - ba bể
+    - cam lộ
+    - lắk
+    - đức huệ
+    - lào cai
+    - nà hang
+    - hoằng hóa
+    - đại từ
+    - dương kinh
+    - giồng riềng
+    - thiệu hóa
+    - thành phố đồng hới
+    - vĩnh thuận
+    - bảo lâm
+    - nghi lộc
+    - giồng trôm
+    - mường nhé
+    - đắk mil
+    - tây trà
+    - hoàng su phì
+    - quế sơn
+    - hà tĩnh
+    - thanh hà
+    - ngân sơn
+    - tuy an
+    - hà nam
+    - pác nặm
+    - lương tài
+    - hưng hà
+    - bù đăng
+    - phước sơn
+    - bình dương
+    - phú lộc
+    - phục hoà
+    - yên dũng
+    - thủ dầu một
+    - đông anh
+    - lâm bình
+    - kỳ anh
+    - vĩnh lộc
+    - ninh giang
+    - ba tơ
+    - xín mần
+    - đắk song
+    - than uyên
+    - an minh
+    - mỹ xuyên
+    - lý sơn
+    - bà rịa - vũng tàu
+    - cần giờ
     - ba vì
-    - bắc từ liêm
+    - cát tiên
+    - phan thiết
+    - tuy hoà
+    - tam kỳ
+    - hiệp đức
+    - đầm hà
+    - hớn quản
+    - hoà an
+    - khánh vĩnh
+    - phú tân
+    - krông pắc
+    - thủ đức
+    - cái bè
+    - đồng văn
+    - tuần giáo
+    - phan rang-tháp chàm
+    - tiên lữ
+    - phú thọ
+    - càng long
+    - đô lương
+    - krông a na
+    - kỳ anh (thị xã)
+    - văn giang
+    - bảo thắng
+    - tuy phong
+    - đại lộc
+    - châu đốc
+    - chơn thành
+    - ninh hòa
+    - vinh
+    - mường tè
+    - thạch hà
+    - lục nam
+    - nậm pồ
+    - hoài nhơn
+    - hồng ngự (thị xã)
+    - ia grai
+    - thạch an
+    - quảng nam
+    - a lưới
+    - thành phố bắc kạn
+    - sơn dương
+    - quận 5
+    - krông năng
+    - gò công đông
+    - tiểu cần
+    - an biên
+    - tràng định
+    - quận 8
+    - sơn tịnh
+    - gò dầu
+    - long điền
+    - trà bồng
+    - tân bình
+    - nam định
+    - quản bạ
+    - lộc ninh
+    - gia viễn
+    - cai lậy (thị xã)
+    - hồng ngự
+    - đồng xuân
+    - bắc yên
+    - mường lát
+    - kim bảng
+    - ia h' drai
+    - vũng liêm
+    - krông pa
+    - lê chân
+    - can lộc
+    - diễn châu
+    - việt trì
+    - đống đa
+    - thanh sơn
+    - nghĩa lộ
+    - kiến xương
+    - mỏ cày nam
+    - vạn ninh
+    - đông hưng
+    - bạch thông
+    - ba chẽ
+    - ứng hòa
+    - nha trang
+    - đồng tháp
+    - hà đông
+    - văn quan
+    - quỳnh lưu
+    - gia lộc
+    - quang bình
+    - đất đỏ
+    - bình xuyên
+    - chợ gạo
+    - năm căn
+    - ayun pa
+    - buôn đôn
+    - cần đước
+    - cẩm giàng
+    - tân an
+    - ba tri
+    - nam đông
+    - nam trực
+    - trà ôn
+    - văn chấn
+    - kế sách
+    - giá rai
+    - hà quảng
+    - bình đại
+    - bát xát
+    - lạc sơn
+    - sông cầu
+    - kiên hải
+    - lạc thủy
+    - kim thành
+    - huế
+    - xuân lộc
+    - ea kar
+    - tân uyên
+    - quảng yên
+    - quận 1
+    - văn lâm
+    - quế phong
+    - từ sơn
+    - thanh hóa
+    - cam ranh
+    - bình lục
+    - đức cơ
+    - tiên yên
+    - đông hà
+    - dĩ an
+    - như xuân
+    - phù ninh
+    - quận 2
+    - vân hồ
+    - kon tum
+    - hữu lũng
+    - thanh miện
+    - tam dương
+    - an giang
+    - đăk pơ
+    - đông hải
+    - bắc mê
+    - mường khương
+    - gia nghĩa
+    - mỏ cày bắc
+    - đắk nông
+    - krông búk
     - cầu giấy
     - chương mỹ
-    - đan phượng
-    - đông anh
-    - đống đa
-    - gia lâm
-    - hà đông
-    - hai bà trưng
-    - hoài đức
-    - hoàn kiếm
-    - hoàng mai
-    - long biên
-    - mê linh
-    - mỹ đức
-    - nam từ liêm
-    - phú xuyên
-    - phúc thọ
-    - quốc oai
-    - sóc sơn
-    - sơn tây
-    - tây hồ
-    - thạch thất
-    - thanh oai
-    - thanh trì
-    - thanh xuân
-    - thường tín
-    - ứng hòa
-    - cẩm xuyên
-    - can lộc
-    - đức thọ
-    - hà tĩnh
-    - hồng lĩnh
-    - hương khê
-    - hương sơn
-    - kỳ anh
-    - kỳ anh (thị xã)
-    - lộc hà
-    - nghi xuân
-    - thạch hà
-    - vũ quang
-    - bình giang
-    - cẩm giàng
-    - chí linh
-    - gia lộc
-    - hải dương
-    - kim thành
-    - kinh môn
-    - nam sách
-    - ninh giang
-    - thanh hà
-    - thanh miện
-    - tứ kỳ
-    - an dương
-    - an lão
-    - bạch long vĩ
-    - cát hải
-    - đồ sơn
-    - dương kinh
-    - hải an
-    - hồng bàng
-    - kiến an
-    - kiến thuỵ
-    - lê chân
-    - ngô quyền
-    - thuỷ nguyên
-    - tiên lãng
-    - vĩnh bảo
-    - châu thành
-    - châu thành a
-    - long mỹ
-    - long mỹ (thị xã)
-    - ngã bảy
-    - phụng hiệp
+    - đam rông
+    - quảng trạch
+    - đắk hà
+    - quan sơn
+    - sơn động
     - vị thanh
-    - vị thuỷ
-    - bình chánh
-    - bình tân
-    - bình thạnh
-    - cần giờ
-    - củ chi
-    - gò vấp
-    - hóc môn
-    - nhà bè
-    - phú nhuận
-    - quận 1
-    - quận 10
-    - quận 11
-    - quận 12
-    - quận 2
-    - quận 3
-    - quận 4
-    - quận 5
-    - quận 6
-    - quận 7
-    - quận 8
-    - quận 9
-    - tân bình
+    - điện biên đông
+    - phú quí
     - tân phú
-    - thủ đức
-    - cao phong
-    - đà bắc
-    - hòa bình
+    - thanh xuân
+    - phú ninh
+    - vũ thư
+    - điện biên
+    - xuân trường
+    - thạnh phú
+    - đồng xoài
+    - vĩnh phúc
+    - đắk r'lấp
+    - sa đéc
+    - phủ lý
+    - phú xuyên
+    - đơn dương
+    - bình sơn
+    - thạnh trị
+    - tân thạnh
+    - tân sơn
+    - giao thủy
+    - hà giang
+    - củ chi
+    - thuận châu
+    - ba đồn
+    - tân thành
+    - bắc kạn
+    - đà lạt
+    - bình chánh
+    - bố trạch
+    - ngã năm
     - kim bôi
+    - nga sơn
+    - nhơn trạch
+    - bình thạnh
+    - long thành
+    - thị xã buôn hồ
+    - anh sơn
+    - giang thành
+    - quỳnh nhai
+    - tân phước
+    - hoà bình
+    - việt yên
+    - hải lăng
+    - cù lao dung
+    - phú bình
+    - hưng nguyên
+    - tánh linh
+    - tri tôn
+    - bình tân
+    - cờ đỏ
+    - đoan hùng
+    - tam đường
+    - quế võ
+    - tân hồng
+    - bình liêu
+    - thanh ba
+    - long hồ
+    - chư sê
+    - quận 4
+    - tân kỳ
+    - hương khê
+    - bắc quang
+    - duyên hải (thị xã)
+    - nguyên bình
+    - gio linh
+    - mường ảng
+    - tịnh biên
+    - tân phú đông
+    - vĩnh yên
+    - bình giang
+    - cô tô
+    - ý yên
+    - hóc môn
+    - thái thụy
+    - bá thước
+    - sông lô
+    - bình thuỷ
+    - vĩnh linh
+    - gò quao
+    - chiêm hóa
+    - tân hiệp
+    - hương thủy
+    - hải dương
+    - cẩm xuyên
+    - vĩnh bảo
+    - kiên giang
+    - cai lậy
+    - lai châu
+    - hoàng mai
+    - lâm đồng
+    - sông hinh
+    - cao bằng
+    - tiền giang
+    - phù cừ
+    - bàu bàng
+    - gò vấp
+    - lạc dương
+    - đông hòa
+    - hội an
+    - phú vang
+    - tuyên quang
+    - vũng tàu
+    - cam lâm
+    - long mỹ (thị xã)
+    - hạ long
+    - đức thọ
+    - uông bí
+    - sầm sơn
+    - quảng điền
+    - mường chà
+    - tương dương
+    - cẩm khê
+    - hoa lư
+    - yên mô
+    - yên khánh
+    - quảng ninh
+    - trảng bàng
+    - hoài ân
+    - buôn ma thuột
+    - sông công
+    - cái răng
+    - quỳnh phụ
+    - minh hóa
+    - lục yên
+    - an lão
+    - phú quốc
+    - bắc từ liêm
+    - thống nhất
+    - tam nông
+    - quận 6
     - kỳ sơn
-    - lạc sơn
-    - lạc thủy
+    - ea h'leo
+    - hải phòng
+    - duy xuyên
+    - mộ đức
+    - nam đàn
+    - bảo lộc
+    - quận 10
+    - cao lãnh (thành phố)
+    - trạm tấu
+    - tân trụ
+    - cồn cỏ
+    - cái nước
+    - hồng bàng
+    - bạch long vĩ
+    - đắk tô
+    - u minh thượng
+    - nông cống
+    - tiên du
+    - thanh oai
+    - chợ đồn
+    - thọ xuân
+    - tân châu
+    - hòa thành
+    - phong thổ
+    - mỹ tho
+    - sông mã
+    - mang thít
+    - cửa lò
+    - sơn tây
+    - kiên lương
+    - vị xuyên
+    - văn lãng
+    - chợ lách
+    - khoái châu
+    - lệ thủy
+    - tuy phước
+    - cà mau
+    - phù yên
+    - xuyên mộc
+    - krông nô
+    - tây hồ
+    - đạ huoai
+    - quảng bình
+    - quảng uyên
+    - nậm nhùn
+    - chi lăng
+    - đạ tẻh
+    - đồng hỷ
+    - thanh liêm
+    - nam từ liêm
+    - diên khánh
+    - sơn la
+    - núi thành
+    - bắc trà my
+    - u minh
+    - phổ yên
+    - kiến an
+    - nhà bè
+    - thạnh hóa
+    - ngã bảy
+    - bác ái
+    - bảo lạc
+    - sóc trăng
+    - tây sơn
+    - tháp mười
+    - mù căng chải
+    - an khê
+    - bạc liêu
+    - ô môn
+    - phú yên
+    - vân đồn
+    - lai vung
+    - gò công tây
+    - cẩm thủy
+    - lục ngạn
+    - sa pa
+    - tuy đức
+    - duy tiên
+    - bỉm sơn
+    - trà cú
+    - hai bà trưng
+    - tân yên
+    - long biên
+    - nghĩa hành
+    - đức linh
+    - đan phượng
+    - bến tre
+    - vĩnh hưng
+    - thạch thất
+    - phong điền
+    - thanh bình
+    - cát hải
+    - vân canh
+    - long khánh
+    - hoàn kiếm
+    - sìn hồ
+    - thuận thành
+    - trực ninh
+    - nông sơn
+    - hải an
+    - ea súp
+    - quận 11
+    - tư nghĩa
+    - thường xuân
+    - ngũ hành sơn
+    - quảng ngãi
+    - yên bình
     - lương sơn
-    - mai châu
+    - lang chánh
+    - như thanh
+    - bắc hà
+    - ninh hải
+    - mèo vạc
+    - mê linh
+    - gia lai
+    - nghi xuân
+    - tân biên
+    - hạ lang
+    - bảo yên
+    - thạch thành
+    - bắc ninh
+    - an phú
+    - phú nhuận
+    - biên hòa
+    - hòa bình
+    - ân thi
+    - đức phổ
+    - kiến tường
+    - hải châu
     - tân lạc
     - yên thủy
-    - ân thi
-    - hưng yên
-    - khoái châu
-    - kim động
-    - mỹ hào
-    - phù cừ
-    - tiên lữ
-    - văn giang
-    - văn lâm
-    - yên mỹ
-    - cam lâm
-    - cam ranh
-    - diên khánh
-    - khánh sơn
-    - khánh vĩnh
-    - nha trang
-    - ninh hòa
-    - vạn ninh
-    - an biên
-    - an minh
-    - châu thành
-    - giang thành
-    - giồng riềng
-    - gò quao
-    - hà tiên
-    - hòn đất
-    - kiên hải
-    - kiên lương
-    - phú quốc
-    - rạch giá
-    - tân hiệp
-    - u minh thượng
-    - vĩnh thuận
-    - đắk glei
-    - đắk hà
-    - đắk tô
-    - ia h' drai
-    - kon plông
-    - kon rẫy
-    - kon tum
-    - ngọc hồi
-    - sa thầy
-    - tu mơ rông
-    - lai châu
-    - mường tè
-    - nậm nhùn
-    - phong thổ
-    - sìn hồ
-    - tam đường
-    - tân uyên
-    - than uyên
-    - bảo lâm
-    - bảo lộc
-    - cát tiên
-    - đạ huoai
-    - đà lạt
-    - đạ tẻh
-    - đam rông
-    - di linh
-    - đơn dương
-    - đức trọng
-    - lạc dương
-    - lâm hà
-    - bắc sơn
-    - bình gia
-    - cao lộc
-    - chi lăng
-    - đình lập
-    - hữu lũng
-    - lạng sơn
-    - lộc bình
-    - tràng định
-    - văn lãng
-    - văn quan
-    - bắc hà
-    - bảo thắng
-    - bảo yên
-    - bát xát
-    - lào cai
-    - mường khương
-    - sa pa
-    - si ma cai
-    - văn bàn
-    - bến lức
-    - cần đước
-    - cần giuộc
-    - châu thành
-    - đức hòa
-    - đức huệ
-    - kiến tường
-    - mộc hóa
-    - tân an
-    - tân hưng
-    - tân thạnh
-    - tân trụ
-    - thạnh hóa
-    - thủ thừa
-    - vĩnh hưng
-    - giao thủy
-    - hải hậu
-    - mỹ lộc
-    - nam định
-    - nam trực
-    - nghĩa hưng
-    - trực ninh
-    - vụ bản
-    - xuân trường
-    - ý yên
-    - anh sơn
-    - con cuông
-    - cửa lò
-    - diễn châu
-    - đô lương
-    - hoàng mai
-    - hưng nguyên
-    - kỳ sơn
-    - nam đàn
-    - nghi lộc
-    - nghĩa đàn
-    - quế phong
-    - quỳ châu
-    - quỳ hợp
-    - quỳnh lưu
-    - tân kỳ
-    - thái hoà
-    - thanh chương
-    - tương dương
-    - vinh
-    - yên thành
-    - gia viễn
-    - hoa lư
-    - kim sơn
-    - nho quan
-    - ninh bình
-    - tam điệp
-    - yên khánh
-    - yên mô
-    - bác ái
-    - ninh hải
-    - ninh phước
-    - ninh sơn
-    - phan rang-tháp chàm
-    - thuận bắc
-    - thuận nam
-    - cẩm khê
-    - đoan hùng
-    - hạ hoà
-    - lâm thao
-    - phù ninh
-    - phú thọ
-    - tam nông
-    - tân sơn
-    - thanh ba
-    - thanh sơn
-    - thanh thuỷ
-    - việt trì
-    - yên lập
-    - đông hòa
-    - đồng xuân
-    - phú hoà
-    - sơn hòa
-    - sông cầu
-    - sông hinh
-    - tây hoà
-    - tuy an
-    - tuy hoà
-    - ba đồn
-    - bố trạch
-    - lệ thủy
-    - minh hóa
-    - quảng ninh
-    - quảng trạch
-    - thành phố đồng hới
-    - tuyên hóa
-    - bắc trà my
-    - đại lộc
-    - điện bàn
-    - đông giang
-    - duy xuyên
-    - hiệp đức
-    - hội an
-    - nam giang
-    - nam trà my
-    - nông sơn
-    - núi thành
-    - phú ninh
-    - phước sơn
-    - quế sơn
-    - tam kỳ
-    - tây giang
-    - thăng bình
-    - tiên phước
-    - ba tơ
-    - bình sơn
-    - đức phổ
-    - lý sơn
-    - minh long
-    - mộ đức
-    - nghĩa hành
-    - quảng ngãi
-    - sơn hà
-    - sơn tây
-    - sơn tịnh
-    - tây trà
-    - trà bồng
-    - tư nghĩa
-    - ba chẽ
-    - bình liêu
-    - cẩm phả
-    - cô tô
-    - đầm hà
-    - đông triều
-    - hạ long
-    - hải hà
-    - hoành bồ
-    - móng cái
-    - quảng yên
-    - tiên yên
-    - uông bí
-    - vân đồn
-    - cam lộ
-    - cồn cỏ
-    - đa krông
-    - đông hà
-    - gio linh
-    - hải lăng
-    - hướng hóa
-    - quảng trị
-    - triệu phong
-    - vĩnh linh
-    - châu thành
-    - cù lao dung
-    - kế sách
-    - long phú
-    - mỹ tú
-    - mỹ xuyên
-    - ngã năm
-    - sóc trăng
-    - thạnh trị
-    - trần đề
-    - vĩnh châu
-    - bắc yên
-    - mai sơn
-    - mộc châu
-    - mường la
-    - phù yên
-    - quỳnh nhai
-    - sơn la
-    - sông mã
-    - sốp cộp
-    - thuận châu
-    - vân hồ
-    - yên châu
-    - bến cầu
-    - châu thành
-    - dương minh châu
-    - gò dầu
-    - hòa thành
-    - tân biên
-    - tân châu
-    - tây ninh
-    - trảng bàng
-    - đông hưng
-    - hưng hà
-    - kiến xương
-    - quỳnh phụ
-    - thái bình
-    - thái thụy
-    - tiền hải
-    - vũ thư
-    - đại từ
-    - định hóa
-    - đồng hỷ
-    - phổ yên
-    - phú bình
-    - phú lương
-    - sông công
-    - thái nguyên
-    - võ nhai
-    - bá thước
-    - bỉm sơn
-    - cẩm thủy
-    - đông sơn
-    - hà trung
-    - hậu lộc
-    - hoằng hóa
-    - lang chánh
-    - mường lát
-    - nga sơn
-    - ngọc lặc
-    - như thanh
-    - như xuân
-    - nông cống
-    - quan hóa
-    - quan sơn
-    - quảng xương
-    - sầm sơn
-    - thạch thành
-    - thanh hóa
-    - thiệu hóa
-    - thọ xuân
-    - thường xuân
-    - tĩnh gia
-    - triệu sơn
-    - vĩnh lộc
+    - bến cát
     - yên định
-    - a lưới
+    - châu đức
     - huế
-    - hương thủy
-    - hương trà
-    - nam đông
-    - phong điền
-    - phú lộc
-    - phú vang
-    - quảng điền
-    - cái bè
-    - cai lậy
-    - cai lậy (thị xã)
-    - châu thành
-    - chợ gạo
-    - gò công
-    - gò công đông
-    - gò công tây
-    - mỹ tho
-    - tân phú đông
-    - tân phước
-    - càng long
-    - cầu kè
-    - cầu ngang
-    - châu thành
-    - duyên hải
-    - duyên hải (thị xã)
-    - tiểu cần
-    - trà cú
-    - trà vinh
-    - chiêm hóa
-    - hàm yên
-    - lâm bình
-    - nà hang
-    - sơn dương
-    - tuyên quang
-    - yên sơn
-    - bình minh
-    - bình tân
-    - long hồ
-    - mang thít
-    - tam bình
-    - trà ôn
+    - yên thế
+    - trà lĩnh
+    - hồng dân
+    - cao lãnh
+    - con cuông
+    - nho quan
+    - châu thành a
+    - cao phong
+    - kon plông
+    - đông giang
+    - thanh trì
+    - tây ninh
+    - ngô quyền
     - vĩnh long
-    - vũng liêm
-    - bình xuyên
-    - lập thạch
-    - phúc yên
-    - sông lô
-    - tam đảo
-    - tam dương
-    - vĩnh tường
-    - vĩnh yên
-    - yên lạc
-    - lục yên
-    - mù căng chải
-    - nghĩa lộ
-    - trạm tấu
-    - trấn yên
-    - văn chấn
-    - văn yên
-    - yên bái
-    - yên bình
+    - hoài đức
+    - hoành bồ
+    - ninh kiều
+    - yên châu
+    - thái nguyên
+    - bà rịa
+    - mường la
+    - quỳ hợp
+    - bắc bình
+    - bù đốp
+    - vĩnh châu
+    - long mỹ
+    - sơn hòa
+    - triệu sơn
+    - lấp vò
+    - chí linh
+    - lộc bình
+    - trảng bom
+    - cẩm mỹ
+    - gia lâm
+    - thuận nam
+    - quảng xương
+    - qui nhơn
+    - mỹ đức
+    - krông bông
+    - gò công
+    - vụ bản
+    - đăk đoa
+    - đông triều
+
+- intent: create_reminder
+  examples: |
+    - đặt lời nhắc giúp anh
+    - nhắc anh một việc quan trọng
+    - tạo lời nhắc cho anh
+    - anh muốn đặt lời nhắc
+    - bạn có thể nhắc anh không?
+    - nhắc anh về điều gì đó
+    - tạo lời nhắc ngay bây giờ
+    - nhắc anh về chuyện này sau
+    - giúp anh tạo lời nhắc
+    - làm sao để tạo lời nhắc
+    - anh muốn nhắc về việc quan trọng
+    - đặt lời nhắc đi
+    - nhắc anh sau nhé
+    - có cách nào để nhắc anh không?
+    - bạn có thể tạo lời nhắc không?
+    - anh muốn được nhắc nhở
+    - nhắc anh sau một lúc
+    - tạo lời nhắc đi
+    - tạo nhắc nhở ngay
+    - giúp anh nhắc về điều đó
+    - nhắc anh lúc [10 giờ](time)
+    - nhắc anh [chiều](sub_time) [mai](date)
+    - đặt lời nhắc cho [ngày mai](date)
+    - tạo lời nhắc [cuối tuần](sub_date)
+    - nhắc anh [gọi điện cho mẹ](event)
+    - nhắc anh [uống thuốc](event)
+    - nhắc anh lúc [7 giờ](time) [tối](sub_time)
+    - tạo lời nhắc vào [sáng](sub_time) [mai](date)
+    - nhắc anh [ăn](event) [sáng](sub_time)
+    - đặt nhắc nhở cho [thứ 2](date)
+    - nhắc anh vào [tối](sub_time)
+    - tạo lời nhắc [cuối tháng](sub_date)
+    - đặt lời nhắc vào [8 giờ](time)
+    - nhắc anh [đến văn phòng](event)
+    - đặt nhắc nhở [ngày kia](date)
+    - tạo lời nhắc [tuần sau](sub_date)
+    - nhắc anh [gọi điện cho khách hàng](event)
+    - nhắc anh lúc [2 giờ](time) [chiều](sub_time)
+    - tạo lời nhắc vào ngày [thứ 7](date)
+    - nhắc anh [về nhà](event)
+    - nhắc anh [8 giờ](time) [ngày mai](date)
+    - nhắc anh [uống thuốc](event) [sáng](sub_time) [mai](date)
+    - đặt lời nhắc lúc [10 giờ](time) [sáng](sub_time) ngày [thứ 7](date)
+    - nhắc anh [đi làm](event) vào [ngày mai](date)
+    - tạo lời nhắc vào [8 giờ](time) [cuối tuần](sub_date)
+    - nhắc anh [mua đồ](event) [chiều](sub_time) [mai](date)
+    - nhắc anh lúc [7 giờ](time) [tối](sub_time) [ngày mai](date)
+    - tạo lời nhắc [gọi cho mẹ](event) vào [cuối tháng](sub_date)
+    - nhắc anh [sáng](sub_time) [mai](date) [uống cà phê](event)
+    - tạo nhắc nhở vào [8 giờ](time) [tuần sau](sub_date)
+    - nhắc anh [kiểm tra email](event) vào [chiều](sub_time) [nay](date)
+    - nhắc anh [đi làm](event) [ngày mai](date)
+    - tạo lời nhắc lúc [2 giờ](time) [chiều](sub_time) vào [cuối tuần](sub_date)
+    - nhắc anh [gọi điện cho sếp](event) vào [sáng](sub_time) [thứ 2](date)
+    - tạo lời nhắc [thứ 3](date) [tuần sau](sub_date) lúc [7 giờ](time)
+    - nhắc anh [mua sắm](event) vào [cuối tháng](sub_date)
+    - nhắc anh [8 giờ](time) vào [ngày mai](date)
+    - nhắc anh [chiều](sub_time) [nay](date) [họp với đội](event)
+    - tạo lời nhắc ngày [thứ 7](date) lúc [7 giờ](time) [sáng](sub_time)
+    - nhắc anh lúc [7 giờ](time) [sáng](sub_time) [mai](date)
+    - nhắc anh [gọi điện cho mẹ](event) vào [7 giờ](time) [sáng](sub_time) [mai](date)
+    - đặt lời nhắc [gửi email cho sếp](event) lúc [9 giờ](time) [ngày mai](date)
+    - nhắc anh [uống thuốc](event) vào [7 giờ](time) [tối](sub_time) [ngày mai](date)
+    - tạo lời nhắc [mua sắm](event) lúc [8 giờ](time) [cuối tuần](sub_date)
+    - nhắc anh [tham dự cuộc họp](event) vào [10 giờ](time) [sáng](sub_time) ngày [thứ 4](date)
+    - nhắc anh [gọi điện cho khách hàng](event) vào [cuối tháng](sub_date) lúc [8 giờ](time)
+    - nhắc anh [gửi báo cáo](event) lúc [2 giờ](time) [chiều](sub_time) [ngày mai](date)
+    - tạo lời nhắc [mua quà sinh nhật](event) vào [sáng](sub_time) [thứ 7](time)
+    - nhắc anh [chơi thể thao](event) vào [sáng](sub_time) [mai](date) lúc [6 giờ](time)
+    - tạo lời nhắc [lên kế hoạch làm việc](event) vào [chiều](sub_time) [mai](date)
+    - nhắc anh [đi gặp bác sĩ](event) vào [7 giờ](time) [chiều](sub_time) [ngày mai](date)
+    - nhắc anh [kiểm tra email](event) lúc [3 giờ](time) [chiều](sub_time) [ngày mai](date)
+    - nhắc anh [mua hàng](event) vào [8 giờ](time) [tối](sub_time) [cuối tuần](sub_date)
+    - đặt lời nhắc [thăm ông bà](event) vào [sáng](sub_time) [thứ 2](time) lúc [9 giờ](time)
+    - nhắc anh [làm bài tập](event) vào [10 giờ](time) [ngày mai](date)
+    - tạo lời nhắc [lên lịch họp](event) lúc [3 giờ](time) [thứ 6](date) [tuần sau](sub_date)
+    - nhắc anh [tập thể dục](event) vào [8 giờ](time) [tối](sub_time) [ngày mai](date)
+    - nhắc anh [gửi tài liệu](event) vào [7 giờ](time) [tối](sub_time) [cuối tháng](sub_date)
+    - tạo lời nhắc [họp với nhóm](event) vào [ngày mai](date) lúc [7 giờ](time) [sáng](sub_time)
+    - nhắc anh [gọi điện cho mẹ](event) vào [8 giờ](time) [tối](sub_time) [ngày mai](date)
+ 
+- intent: create_timer
+  examples: |
+    - đặt báo thức sau [5 phút](time)
+    - tạo hẹn giờ trong [10 giây](time)
+    - bật hẹn giờ [2 giờ](time) nữa
+    - nhắc anh sau [30 phút](time)
+    - hẹn giờ trong [1 giờ 15 phút](time)
+    - đặt hẹn giờ sau [15 giây](time)
+    - nhắc nhở anh trong [10 phút](time)
+    - đếm ngược [45 giây](time)
+    - nhắc nhở anh sau [2 giờ](time)
+    - tạo hẹn giờ trong [20 phút](time)
+    - bật hẹn giờ trong [30 giây](time)
+    - tạo hẹn giờ sau [1 phút 30 giây](time)
+    - đếm ngược [90 giây](time)
+    - hẹn giờ sau [1 tiếng](time)
+    - đặt nhắc nhở trong [5 giờ](time)
+    - tạo hẹn giờ trong [2 phút](time)
+    - bật hẹn giờ sau [5 phút](time)
+    - tạo hẹn giờ [30 phút](time)
+    - nhắc anh trong [2 phút 45 giây](time)
+    - hẹn giờ sau [10 phút 20 giây](time)
+    - nhắc anh [uống thuốc](event)
+    - hẹn giờ để [nấu cơm](event)
+    - nhắc nhở anh [đi ngủ](event)
+    - tạo hẹn giờ để [đọc sách](event)
+    - nhắc anh [tập thể dục](event)
+    - hẹn giờ [gọi điện thoại](event)
+    - bật hẹn giờ cho [làm bài tập](event)
+    - nhắc anh [đi họp](event)
+    - tạo báo thức để [kiểm tra email](event)
+    - nhắc nhở anh [đi chợ](event)
+    - nhắc anh [uống cà phê](event)
+    - tạo hẹn giờ để [dọn dẹp nhà cửa](event)
+    - hẹn giờ [học bài](event)
+    - bật hẹn giờ cho [chơi game](event)
+    - nhắc nhở anh [mua sắm](event)
+    - tạo hẹn giờ để [kiểm tra tin nhắn](event)
+    - nhắc anh [gọi điện cho mẹ](event)
+    - tạo báo thức cho [đi làm](event)
+    - nhắc anh [họp với sếp](event)
+    - hẹn giờ để [nghỉ ngơi](event)
+    - nhắc anh [uống thuốc](event) sau [30 phút](time)
+    - hẹn giờ để [nấu cơm](event) trong [15 phút](time)
+    - tạo hẹn giờ [5 phút](time) để [làm bài tập](event)
+    - nhắc anh [đi ngủ](event) trong [1 giờ](time)
+    - hẹn giờ [30 phút](time) để [tập thể dục](event)
+    - nhắc nhở anh [đi họp](event) sau [10 phút](time)
+    - tạo báo thức trong [20 phút](time) để [đọc sách](event)
+    - nhắc anh [gọi điện thoại](event) sau [1 giờ](time)
+    - đặt hẹn giờ trong [2 phút](time) để [kiểm tra email](event)
+    - tạo hẹn giờ [1 tiếng](time) cho [làm việc](event)
+    - nhắc nhở anh [đi chợ](event) trong [15 phút](time)
+    - tạo hẹn giờ [5 phút](time) để [nghỉ ngơi](event)
+    - hẹn giờ [30 giây](time) để [lấy thức ăn](event)
+    - bật hẹn giờ [45 giây](time) để [uống nước](event)
+    - nhắc anh [gọi điện cho mẹ](event) sau [20 phút](time)
+    - tạo báo thức trong [10 phút](time) để [học bài](event)
+    - nhắc anh [tập thể dục](event) sau [5 phút](time)
+    - tạo hẹn giờ [3 phút](time) để [đi ngủ](event)
+    - nhắc anh [xem tin tức](event) sau [1 phút](time)
+    - hẹn giờ [15 phút](time) để [kiểm tra tin nhắn](event)
+    - nhắc anh [mua đồ](event) sau [5 phút](time) nữa
+    - nhắc anh [đi mua đồ](event) sau [1 tiếng](time) nữa
+    - [1 tiếng](time) nữa nhắc anh [giặt đồ](event)
+    - nhắc anh sau [10 phút](time)
+    - nhắc anh [gọi điện cho mẹ](event) sau [30 phút](time)
+    - sau [2 tiếng](time) nhắc anh [đi tập thể dục](event)
+    - sau [15 phút](time) nhắc anh [kiểm tra email](event)
+    - nhắc anh sau [45 phút](time) để [tắt bếp](event)
+    - đặt hẹn giờ [20 phút](time) nhắc anh [nấu cơm](event)
+    - nhắc anh trong [1 tiếng](time) để [làm bài tập](event)
+    - [5 phút](time) nữa nhắc anh [uống thuốc](event)
+    - nhắc anh sau [1 tiếng rưỡi](time) để [làm việc](event)
+    - [10 phút](time) nữa nhắc anh [tưới cây](event)
+    - nhắc anh [kiểm tra công việc](event) sau [20 phút](time)
+    - nhắc anh [gửi email](event) sau [1 tiếng 30 phút](time)
+    - đặt hẹn giờ [10 phút](time) để nhắc anh [đọc sách](event)
+    - nhắc anh trong [1 giờ 15 phút](time) để [dọn dẹp](event)
+    - nhắc anh [tập yoga](event) sau [1 giờ](time)
+    - nhắc anh [đi bộ](event) sau [2 giờ](time) nữa
+    - nhắc anh [làm việc](event) sau [5 phút](time)
+    - sau [40 phút](time) nhắc anh [pha cà phê](event)
+
+- intent: inform_event
+  examples: |
+    - nhắc anh [uống thuốc](event)
+    - [gọi điện cho mẹ](event)
+    - [đi họp](event)
+    - nhắc anh [mua đồ ăn](event)
+    - nhớ nhắc anh [đọc sách](event)
+    - [tập thể dục](event)
+    - anh cần [gửi email cho sếp](event)
+    - nhắc anh [đi gặp khách hàng](event)
+    - anh muốn [dọn dẹp nhà cửa](event)
+    - nhắc anh [họp với đội](event)
+    - [chăm sóc cây](event)
+    - [nấu ăn](event)
+    - nhắc anh [lấy đồ giặt](event)
+    - anh cần [kiểm tra email](event)
+    - [đưa xe đi bảo dưỡng](event)
+    - [đi làm](event)
+    - [gọi điện cho bác sĩ](event)
+    - anh muốn [lên kế hoạch làm việc](event)
+    - [dọn phòng](event)
+    - anh cần [mua quà sinh nhật](event)
+    - nhắc anh [gửi tài liệu](event)
+    - nhắc anh [nấu bữa trưa](event)
+    - anh cần [đặt vé máy bay](event)
+    - nhớ nhắc anh [thăm ông bà](event)
+    - nhắc anh [họp dự án](event)
+    - nhắc anh [làm bài tập](event)
+    - [đi kiểm tra sức khỏe](event)
+    - [lên kế hoạch cho chuyến đi](event)
+    - nhớ nhắc anh [kiểm tra lịch](event)
+    - anh cần [thanh toán hóa đơn](event)
+    - [gọi điện cho khách hàng](event)
+    - anh cần [họp với đồng nghiệp](event)
+    - [lên kế hoạch dự án](event)
+    - [xem lại báo cáo](event)
+    - anh muốn [đi gặp đối tác](event)
+    - nhắc anh [tham gia hội thảo](event)
+    - [đặt lịch hẹn](event)
+    - anh cần [chốt hợp đồng](event)
+    - nhắc anh [học tiếng Anh](event)
+    - anh cần [làm việc với nhóm](event)
+
+- intent: inform_time_and_sub_time
+  examples: |
+    - nhớ nhắc anh lúc [8 giờ](time)
+    - nhắc anh vào [10 giờ](time)
+    - báo thức lúc [7 giờ 30](time)
+    - anh cần được nhắc vào [9 giờ 15](time)
+    - hẹn giờ cho [6 giờ](time)
+    - bật báo thức vào [5 giờ](time)
+    - anh cần nhắc lúc [3 giờ rưỡi](time)
+    - nhắc nhở anh vào [11 giờ 45](time)
+    - anh muốn nhắc vào lúc [2 giờ](time)
+    - tạo nhắc nhở lúc [1 giờ 30](time)
+    - hãy nhắc anh vào [12 giờ](time)
+    - [4 giờ](time)
+    - [8 giờ 20](time)
+    - [5 giờ rưỡi](time)
+    - [9 giờ 10](time)
+    - [6 giờ](time)
+    - [10 giờ 30](time)
+    - [11 giờ](time)
+    - [7 giờ](time)
+    - [5 giờ](time)
+    - anh nhớ nhắc lúc [8 giờ](time) [sáng](sub_time)
+    - nhắc anh vào [10 giờ](time) [chiều](sub_time)
+    - báo thức lúc [7 giờ 30](time) [tối](sub_time)
+    - anh cần được nhắc vào [9 giờ 15](time) [sáng](sub_time)
+    - hẹn giờ cho [6 giờ](time) [sáng](sub_time)
+    - bật báo thức vào [5 giờ](time) [chiều](sub_time)
+    - anh cần nhắc lúc [3 giờ rưỡi](time) [trưa](sub_time)
+    - nhắc nhở anh vào [11 giờ 45](time) [sáng](sub_time)
+    - anh muốn nhắc vào lúc [2 giờ](time) [chiều](sub_time)
+    - tạo nhắc nhở lúc [1 giờ 30](time) [tối](sub_time)
+    - [12 giờ](time) [trưa](sub_time)
+    - [4 giờ](time) [chiều](sub_time)
+    - [8 giờ 20](time) [tối](sub_time)
+    - [5 giờ 45](time) [chiều](sub_time)
+    - [9 giờ 10](time) [sáng](sub_time)
+    - [6 giờ](time) [tối](sub_time)
+    - [10 giờ 30](time) [trưa](sub_time)
+    - [11 giờ](time) [sáng](sub_time)
+    - [7 giờ](time) [chiều](sub_time)
+    - [5 giờ](time) [sáng](sub_time)
 
 - intent: nlu_fallback
   examples: |
-    - [blah blah](unknown)
-    - [xyz](unknown)
-    - [unrelated statement](unknown)
+    - anh muốn cái kia
+    - Làm cái đó giúp anh
+    - Mở cái này
+    - Sao không làm được?
+    - Cái này làm sao?
+    - Ai là tổng thống Mỹ hiện nay?
+    - Bạn có thể cho anh mượn tiền không?
+    - Dự báo giá vàng tuần sau thế nào?
+    - Công thức nấu món ăn Pháp là gì?
+    - Làm sao để anh mua vé máy bay?
+    - Bật đèn ở đâu đó
+    - Phát bài nhạc yêu thích của anh
+    - Tắt đi
+    - Bật một thứ gì đó đi
+    - Cho anh thông tin
+    - anh cần...
+    - Phát...
+    - Làm sao để...
+    - Bạn có thể...
+    - Mở nhạc nhưng mà...
+    - Giúp anh
+    - anh không biết nên làm gì
+    - Bạn có thể làm được gì?
+    - Thời tiết
+    - Mở đi
+    - Con mèo của anh đang ngủ
+    - Bạn thích ăn gì?
+    - Đã đến giờ ăn chưa?
+    - Bạn có bạn trai chưa?
+    - Hôm nay anh thấy mệt quá
 
