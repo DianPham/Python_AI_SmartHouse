@@ -22,11 +22,18 @@ from spotipy.oauth2 import SpotifyOAuth
 import os
 
 # Initialize Spotify client
+scope='user-modify-playback-state,user-read-playback-state'
+client_id='fcb535d7568e400ebad08091fbee0027'
+client_secret='8128f7d68e50457fac477fb40253ae66'
+redirect_uri='http://localhost:8888/callback'
+
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
-    client_id='fcb535d7568e400ebad08091fbee0027',
-    client_secret='8128f7d68e50457fac477fb40253ae66',
-    redirect_uri='http://localhost:5000/callback',
-    scope='user-modify-playback-state,user-read-playback-state'))
+    client_id=client_id,
+    client_secret=client_secret,
+    redirect_uri=redirect_uri,
+    scope=scope,
+    cache_path=".spotify_cache"  # Path to cache file for token refreshing
+))
 
 api_key_ipstack = "91a4beec0e772afcc8f41029504fcd44"
 api_key_openweather = "7fd54ba58d8d7bb0736a5770b52616e5"
