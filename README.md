@@ -81,8 +81,8 @@ Each module works as an independent component communicating through internal tri
 ### ⚙️ Installation Steps
 ```bash
 # 1. Clone repository
-git clone https://github.com/DianPham/SmartHomeVoiceAssistant.git
-cd SmartHomeVoiceAssistant
+git clone https://github.com/DianPham/Python_AI_SmartHouse.git
+cd Python_AI_SmartHouse
 
 # 2. Install dependencies
 pip install -r requirements.txt
