@@ -81,7 +81,7 @@ Each module works as an independent component communicating through internal tri
 ### ⚙️ Installation Steps
 ```bash
 # 1. Clone repository
-git clone https://github.com/<your-username>/SmartHomeVoiceAssistant.git
+git clone https://github.com/DianPham/SmartHomeVoiceAssistant.git
 cd SmartHomeVoiceAssistant
 
 # 2. Install dependencies
