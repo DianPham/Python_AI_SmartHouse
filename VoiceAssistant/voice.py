@@ -38,7 +38,7 @@ def speak(text):
         "voice": "hn-thaochi",
         "speed": 1,
         "tts_return_option": 2,
-        "token": "$36c1bbbf0afd3e5266ca70d578bccec5",
+        "token": "",
         "without_filter": False
     })
     headers = {

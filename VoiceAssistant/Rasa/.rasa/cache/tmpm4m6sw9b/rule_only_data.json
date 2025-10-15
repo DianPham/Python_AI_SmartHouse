@@ -1,7 +1,0 @@
-{
-  "rule_only_slots": [
-    "clarify_district",
-    "specific_date"
-  ],
-  "rule_only_loops": []
-}
